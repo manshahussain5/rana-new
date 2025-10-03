@@ -1,0 +1,820 @@
+/* Job Seeker Platform - NTS Style Custom Styles */
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: #f8fafc;
+}
+
+/* Animations */
+.fade-in { 
+    animation: fadeIn 0.5s ease-in; 
+}
+
+@keyframes fadeIn { 
+    from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    } 
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+}
+
+.slide-in { 
+    animation: slideIn 0.3s ease-out; 
+}
+
+@keyframes slideIn { 
+    from { 
+        transform: translateX(-100%); 
+    } 
+    to { 
+        transform: translateX(0); 
+    } 
+}
+
+.hover-scale { 
+    transition: transform 0.2s; 
+}
+
+.hover-scale:hover { 
+    transform: scale(1.02); 
+}
+
+/* NTS Style Background gradients */
+.gradient-bg { 
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); 
+}
+
+.nts-gradient-orange {
+    background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+}
+
+.nts-gradient-blue {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+}
+
+/* NTS Style Job card styles */
+.job-card { 
+    transition: all 0.3s ease; 
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.job-card:hover { 
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+    border-color: #3b82f6;
+}
+
+/* NTS Style Statistics Cards */
+.stats-card {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.stats-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #1e40af);
+}
+
+.stats-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal styles */
+.modal { 
+    transition: all 0.3s ease;
+    z-index: 1000;
+    display: none;
+}
+
+.modal.show { 
+    opacity: 1; 
+    visibility: visible;
+    display: flex;
+}
+
+.modal.hide { 
+    opacity: 0; 
+    visibility: hidden;
+    display: none;
+}
+
+/* Full-page modal styles */
+.modal.full-page {
+    background: white;
+    z-index: 9999;
+}
+
+.modal.full-page .modal-content {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Ensure modals fit perfectly and are scrollable */
+.modal {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+}
+
+/* Ensure proper flex behavior for modal content */
+.modal .flex-1 {
+    min-height: 0 !important;
+    flex: 1 1 0% !important;
+}
+
+.modal .min-h-0 {
+    min-height: 0 !important;
+}
+
+
+/* Reset any inherited styles that might cause gaps */
+.modal * {
+    box-sizing: border-box;
+}
+
+/* Ensure body doesn't interfere with modal positioning */
+body {
+    position: relative;
+}
+
+body.modal-open {
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.modal > div {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .modal {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .modal .p-4 {
+        padding: 1rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    .modal .sm\:p-6 {
+        padding: 1rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    /* Ensure content doesn't get cut off at bottom */
+    .modal .flex-1 {
+        padding-bottom: 2rem !important;
+    }
+    
+    /* Extra padding for scrollable content */
+    .modal .overflow-y-auto {
+        padding-bottom: 3rem !important;
+    }
+    
+    /* Additional padding for form content on mobile */
+    .modal form {
+        padding-bottom: 3rem !important;
+    }
+    
+    /* Ensure buttons are visible */
+    .modal .space-y-4 > *:last-child {
+        margin-bottom: 3rem !important;
+    }
+    
+    /* Specific padding for job details content */
+    #jobDetails {
+        padding-bottom: 4rem !important;
+    }
+    
+    /* Ensure all content sections have proper bottom spacing */
+    .modal .bg-white {
+        margin-bottom: 1rem !important;
+    }
+    
+    .modal .bg-white:last-child {
+        margin-bottom: 3rem !important;
+    }
+    
+    /* Additional spacing for job details specific elements */
+    #jobDetails .grid:last-child {
+        margin-bottom: 2rem !important;
+    }
+    
+    #jobDetails .space-y-8 > *:last-child {
+        margin-bottom: 2rem !important;
+    }
+    
+    /* Ensure buttons and final elements are visible */
+    #jobDetails button {
+        margin-bottom: 1rem !important;
+    }
+    
+    /* Fix container collision on mobile */
+    .modal .p-4 {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+    
+    .modal .sm\:p-6 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    /* Ensure content doesn't touch screen edges */
+    #jobDetails .bg-white {
+        margin-left: 0.5rem !important;
+        margin-right: 0.5rem !important;
+    }
+    
+    /* Fix grid collision */
+    #jobDetails .grid {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    /* Fix flex containers */
+    #jobDetails .flex {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    /* Ensure all content fits within screen bounds */
+    #jobDetails * {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    /* Fix specific elements that might overflow */
+    #jobDetails .rounded-2xl {
+        margin-left: 0.25rem !important;
+        margin-right: 0.25rem !important;
+    }
+    
+    /* Ensure grid items don't overflow */
+    #jobDetails .grid > * {
+        padding-left: 0.25rem !important;
+        padding-right: 0.25rem !important;
+    }
+    
+    /* Add more spacing between sections on mobile */
+    #jobDetails .space-y-8 > * {
+        margin-bottom: 2rem !important;
+    }
+    
+    #jobDetails .space-y-8 > *:last-child {
+        margin-bottom: 3rem !important;
+    }
+    
+    /* Add spacing between job description and requirements */
+    #jobDetails .space-y-8 > div:nth-child(1) {
+        margin-bottom: 2.5rem !important;
+    }
+    
+    #jobDetails .space-y-8 > div:nth-child(2) {
+        margin-bottom: 2.5rem !important;
+    }
+    
+    /* Add spacing between icons and text */
+    #jobDetails .flex.items-center {
+        margin-bottom: 1rem !important;
+    }
+    
+    #jobDetails .flex.items-center .mr-3,
+    #jobDetails .flex.items-center .mr-4 {
+        margin-right: 0.75rem !important;
+    }
+    
+    /* Add spacing for grid items */
+    #jobDetails .grid > * {
+        margin-bottom: 1rem !important;
+    }
+    
+    /* Simple icon-text alignment */
+    #jobDetails .flex.items-center {
+        align-items: center !important;
+    }
+    
+    #jobDetails .flex.items-center > div:last-child {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+    
+    /* Add spacing for job summary section */
+    #jobDetails .lg\\:col-span-1 {
+        margin-top: 1.5rem !important;
+    }
+    
+    /* Move application fee text up on mobile */
+    #jobDetails .bg-gradient-to-br.from-blue-50.to-indigo-50 {
+        margin-top: -2rem !important;
+    }
+    
+    /* Alternative selector for application fee */
+    #jobDetails .rounded-2xl:last-child {
+        margin-top: -2rem !important;
+    }
+    
+    /* Target application fee section more specifically */
+    #jobDetails .lg\\:col-span-1 .bg-gradient-to-br {
+        margin-top: -2rem !important;
+    }
+    
+    /* Move Apply Now button up on mobile */
+    #jobDetails button {
+        margin-top: -1rem !important;
+    }
+    
+    /* Target Apply Now button more specifically */
+    #jobDetails .bg-gradient-to-r.from-ntsBlue600.to-ntsBlue800 {
+        margin-top: -1rem !important;
+    }
+    
+    /* Add spacing for job info cards */
+    #jobDetails .bg-gray-50 {
+        margin-bottom: 1rem !important;
+        padding: 1rem !important;
+    }
+    
+    /* Add spacing for section headers */
+    #jobDetails h3 {
+        margin-bottom: 1.5rem !important;
+    }
+    
+    /* Add spacing for job details grid */
+    #jobDetails .grid.grid-cols-1.md\\:grid-cols-3 {
+        gap: 1rem !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    /* Add spacing for buttons */
+    #jobDetails button {
+        margin-top: 1rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    /* Add spacing for text content */
+    #jobDetails .text-gray-600 {
+        line-height: 1.6 !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+
+/* Enhanced modal animations */
+.modal .bg-white {
+    transition: transform 0.3s ease;
+}
+
+/* Form input focus animations */
+.modal input:focus,
+.modal textarea:focus,
+.modal select:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover animations */
+.modal button:hover {
+    transform: translateY(-2px);
+}
+
+/* Card hover effects */
+.modal .bg-white:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* NTS Style Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #ea580c, #f97316);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #c2410c, #ea580c);
+}
+
+/* Modal specific scrollbars with Google-style arrows */
+.modal .overflow-y-auto::-webkit-scrollbar {
+    width: 16px;
+}
+
+.modal .overflow-y-auto::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 8px;
+}
+
+.modal .overflow-y-auto::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    border-radius: 8px;
+    border: 2px solid #f1f5f9;
+}
+
+.modal .overflow-y-auto::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+}
+
+/* Google-style scrollbar buttons */
+.modal .overflow-y-auto::-webkit-scrollbar-button {
+    display: block;
+    height: 16px;
+    width: 16px;
+    background: #e2e8f0;
+    border-radius: 8px;
+}
+
+.modal .overflow-y-auto::-webkit-scrollbar-button:vertical:start:decrement {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 15l7-7 7 7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
+}
+
+.modal .overflow-y-auto::-webkit-scrollbar-button:vertical:end:increment {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
+}
+
+.modal .overflow-y-auto::-webkit-scrollbar-button:hover {
+    background-color: #cbd5e1;
+}
+
+/* Job details modal scrollbar with Google-style arrows */
+#jobDetails::-webkit-scrollbar {
+    width: 16px;
+}
+
+#jobDetails::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 8px;
+}
+
+#jobDetails::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #3b82f6, #1e40af);
+    border-radius: 8px;
+    border: 2px solid #f1f5f9;
+}
+
+#jobDetails::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #1e40af, #1e3a8a);
+}
+
+/* Google-style scrollbar buttons for job details */
+#jobDetails::-webkit-scrollbar-button {
+    display: block;
+    height: 16px;
+    width: 16px;
+    background: #e2e8f0;
+    border-radius: 8px;
+}
+
+#jobDetails::-webkit-scrollbar-button:vertical:start:decrement {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 15l7-7 7 7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
+}
+
+#jobDetails::-webkit-scrollbar-button:vertical:end:increment {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
+}
+
+#jobDetails::-webkit-scrollbar-button:hover {
+    background-color: #cbd5e1;
+}
+
+/* Application form scrollbar with Google-style arrows */
+#applicationForm::-webkit-scrollbar {
+    width: 16px;
+}
+
+#applicationForm::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 8px;
+}
+
+#applicationForm::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #10b981, #059669);
+    border-radius: 8px;
+    border: 2px solid #f1f5f9;
+}
+
+#applicationForm::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #059669, #047857);
+}
+
+/* Google-style scrollbar buttons for application form */
+#applicationForm::-webkit-scrollbar-button {
+    display: block;
+    height: 16px;
+    width: 16px;
+    background: #e2e8f0;
+    border-radius: 8px;
+}
+
+#applicationForm::-webkit-scrollbar-button:vertical:start:decrement {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 15l7-7 7 7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
+}
+
+#applicationForm::-webkit-scrollbar-button:vertical:end:increment {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
+}
+
+#applicationForm::-webkit-scrollbar-button:hover {
+    background-color: #cbd5e1;
+}
+
+/* Firefox scrollbar styling */
+.modal .overflow-y-auto {
+    scrollbar-width: thin;
+    scrollbar-color: #3b82f6 #f1f5f9;
+}
+
+#jobDetails {
+    scrollbar-width: thin;
+    scrollbar-color: #3b82f6 #f1f5f9;
+}
+
+#applicationForm {
+    scrollbar-width: thin;
+    scrollbar-color: #10b981 #f1f5f9;
+}
+
+/* Smooth scrolling for modals */
+.modal .bg-white {
+    scroll-behavior: smooth;
+}
+
+#jobDetails {
+    scroll-behavior: smooth;
+}
+
+#applicationForm {
+    scroll-behavior: smooth;
+}
+
+/* Loading spinner */
+.loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3b82f6;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Success/Error messages */
+.message {
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin: 16px 0;
+    font-weight: 500;
+}
+
+.message.success {
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.message.error {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
+
+.message.warning {
+    background-color: #fef3c7;
+    color: #92400e;
+    border: 1px solid #fde68a;
+}
+
+/* File upload styles */
+.file-upload-area {
+    border: 2px dashed #d1d5db;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.file-upload-area:hover {
+    border-color: #3b82f6;
+    background-color: #f8fafc;
+}
+
+.file-upload-area.dragover {
+    border-color: #3b82f6;
+    background-color: #eff6ff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .job-card {
+        margin-bottom: 16px;
+    }
+    
+    .modal {
+        padding: 8px;
+    }
+    
+    .modal .bg-white {
+        max-height: 95vh;
+        margin: 0;
+    }
+    
+    .modal .p-6 {
+        padding: 1rem;
+    }
+    
+    .grid {
+        gap: 16px;
+    }
+    
+    .modal h3 {
+        font-size: 1.25rem;
+    }
+    
+    .modal .text-3xl {
+        font-size: 1.5rem;
+    }
+    
+    .modal .text-xl {
+        font-size: 1.125rem;
+    }
+}
+
+/* NTS Style Button Animations */
+.btn-nts {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.btn-nts::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn-nts:hover::before {
+    left: 100%;
+}
+
+/* NTS Style Navigation */
+.nts-nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nts-nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #3b82f6, #1e40af);
+    transition: width 0.3s ease;
+}
+
+.nts-nav-link:hover::after {
+    width: 100%;
+}
+
+/* NTS Style Form Elements */
+.nts-input {
+    border: 2px solid #e2e8f0;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.nts-input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    outline: none;
+}
+
+/* NTS Style Footer */
+.nts-footer {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    color: #ffffff;
+}
+
+.nts-footer a {
+    transition: all 0.3s ease;
+}
+
+.nts-footer a:hover {
+    color: #fbbf24;
+    transform: translateX(4px);
+}
+
+/* NTS Style Animations */
+@keyframes ntsPulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.nts-pulse {
+    animation: ntsPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes ntsBounce {
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+.nts-bounce {
+    animation: ntsBounce 1s infinite;
+}
+
+/* Print styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .job-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #e5e7eb;
+    }
+}

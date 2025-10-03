@@ -1,0 +1,22 @@
+{
+  "name": "job-seeker-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Job Seeker Platform",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 5500 -o",
+    "build": "echo 'Frontend build completed'",
+    "dev": "npx http-server . -p 5500 -o"
+  },
+  "keywords": [
+    "frontend",
+    "job",
+    "seeker",
+    "platform"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
