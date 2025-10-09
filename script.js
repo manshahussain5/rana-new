@@ -214,7 +214,7 @@ const fixedJobs = [
         salary: '55,000 - 65,000 PKR',
         experience: '6 months - 1 year',
         description: 'Oversee daily operations and manage staff.',
-        requirements: 'Business degree, 3+ years food service experience.',
+        requirements: 'B.Com or BBA, food service experience.',
         featured: true,
         postedDate: new Date('2024-01-20'),
         applications: 15
@@ -229,7 +229,7 @@ const fixedJobs = [
         salary: '75,000 - 90,000 PKR',
         experience: '1 year',
         description: 'Lead sales operations and drive revenue growth.',
-        requirements: 'Business degree, 4+ years sales management experience.',
+        requirements: 'Bachelors degree, sales management experience.',
         featured: true,
         postedDate: new Date('2024-01-18'),
         applications: 7
@@ -259,7 +259,7 @@ const fixedJobs = [
         salary: '45,000 - 55,000 PKR',
         experience: '0-6 months',
         description: 'Handle visitors and provide administrative support.',
-        requirements: 'High school diploma, 1+ years experience.',
+        requirements: 'Matric, 1+ years experience.',
         featured: false,
         postedDate: new Date('2024-01-25'),
         applications: 10
@@ -274,7 +274,7 @@ const fixedJobs = [
         salary: '32,000 - 40,000 PKR',
         experience: '0-6 months',
         description: 'Handle data entry and system monitoring.',
-        requirements: 'High school diploma, 1+ years computer experience.',
+        requirements: 'Matric, 1+ years computer experience.',
         featured: false,
         postedDate: new Date('2024-01-28'),
         applications: 22
@@ -304,7 +304,7 @@ const fixedJobs = [
         salary: '40,000 - 55,000 PKR',
         experience: '6 months - 1 year',
         description: 'Support accounting operations and bookkeeping.',
-        requirements: 'Accounting degree, 1+ years experience.',
+        requirements: 'Bachelor degree, 1+ years experience.',
         featured: false,
         postedDate: new Date('2024-02-01'),
         applications: 10
@@ -319,7 +319,7 @@ const fixedJobs = [
         salary: '60,000 - 75,000 PKR',
         experience: '0-1 years',
         description: 'Handle financial reporting and tax preparation.',
-        requirements: 'Accounting degree, 2+ years experience.',
+        requirements: 'B.Com or BBA, 1+ years experience.',
         featured: true,
         postedDate: new Date('2024-02-03'),
         applications: 6
@@ -334,7 +334,7 @@ const fixedJobs = [
         salary: '50,000 - 65,000 PKR',
         experience: '0-1 years',
         description: 'Create designs for marketing materials and websites.',
-        requirements: 'Design degree, 2+ years experience, Adobe skills.',
+        requirements: 'Graphic Design or relevant degree, 1+ years experience, Adobe skills.',
         featured: true,
         postedDate: new Date('2024-02-05'),
         applications: 5
@@ -349,7 +349,7 @@ const fixedJobs = [
         salary: '40,000 - 55,000 PKR',
         experience: '0-6 months',
         description: 'Work on design projects and develop creative skills.',
-        requirements: 'Design degree, 1+ years experience.',
+        requirements: 'Matric or Intermediate, 1+ years experience.',
         featured: false,
         postedDate: new Date('2024-02-07'),
         applications: 8
@@ -364,7 +364,7 @@ const fixedJobs = [
         salary: '30,000 - 45,000 PKR',
         experience: '0-6 months',
         description: 'Provide customer support via phone and email.',
-        requirements: 'High school diploma, 1+ years experience.',
+        requirements: 'Matric, 1+ years experience.',
         featured: false,
         postedDate: new Date('2024-02-09'),
         applications: 25
@@ -379,7 +379,7 @@ const fixedJobs = [
         salary: '35,000 - 40,000 PKR',
         experience: '0-1 years',
         description: 'Provide office support and maintenance.',
-        requirements: 'High school diploma, physical fitness.',
+        requirements: 'Matric, physical fitness.',
         featured: false,
         postedDate: new Date('2024-02-11'),
         applications: 36
@@ -409,7 +409,7 @@ const fixedJobs = [
         salary: '35,000 - 45,000 PKR',
         experience: '0-6 months',
         description: 'Provide administrative support and data entry.',
-        requirements: 'High school diploma, 1+ years office experience.',
+        requirements: 'Matric, 1+ years office experience.',
         featured: false,
         postedDate: new Date('2024-02-15'),
         applications: 9
@@ -424,7 +424,7 @@ const fixedJobs = [
         salary: '30,000 - 40,000 PKR',
         experience: '0-6 months',
         description: 'Handle medication dispensing and inventory.',
-        requirements: 'High school diploma, 1+ years pharmacy experience.',
+        requirements: 'Dispenser Diploma or Relevant Degree, 1+ years pharmacy experience.',
         featured: false,
         postedDate: new Date('2024-02-17'),
         applications: 18
@@ -448,13 +448,13 @@ const fixedJobs = [
         id: 18,
         title: 'Cashier',
         company: 'Retail Store',
-        location: 'Karachi',
+        location: 'Punjab',
         type: 'full-time',
         category: 'retail',
         salary: '40,000 - 45,000 PKR',
         experience: '0-6 months',
         description: 'Handle cash transactions and customer service.',
-        requirements: 'High school diploma, 1+ years cashier experience.',
+        requirements: 'Matric or Intermediate, 1+ years cashier experience.',
         featured: false,
         postedDate: new Date('2024-02-21'),
         applications: 12
@@ -463,13 +463,13 @@ const fixedJobs = [
         id: 19,
         title: 'Data Entry Operator',
         company: 'Data Services',
-        location: 'Sialkot',
+        location: 'Punjab',
         type: 'full-time',
         category: 'administration',
         salary: '30,000 - 40,000 PKR',
         experience: '0-6 months',
         description: 'Perform data entry tasks and maintain databases.',
-        requirements: 'High school diploma, 1+ years data entry experience.',
+        requirements: 'Matric or Intermediate, 1+ years data entry experience.',
         featured: false,
         postedDate: new Date('2024-02-23'),
         applications: 20
@@ -560,7 +560,7 @@ const fixedJobs = [
         salary: '70,000 - 85,000 PKR',
         experience: '0-1 years',
         description: 'Oversee office operations, coordinate teams, and ensure efficient workflows.',
-        requirements: 'Bachelor degree preferred; strong coordination and communication skills.',
+        requirements: 'Bachelor degree preferred, strong coordination and communication skills.',
         featured: false,
         postedDate: new Date(),
         applications: 5
@@ -575,7 +575,7 @@ const fixedJobs = [
         salary: '40,000 - 55,000 PKR',
         experience: '0-1 years',
         description: 'Assist executives with scheduling, correspondence, and documentation.',
-        requirements: 'Strong organizational skills; proficiency with MS Office.',
+        requirements: 'Intermediate, strong organizational skills; proficiency with MS Office.',
         featured: false,
         postedDate: new Date(),
         applications: 6
@@ -590,7 +590,7 @@ const fixedJobs = [
         salary: '55,000 - 70,000 PKR',
         experience: '0-1 years',
         description: 'Develop and maintain software applications as part of a team.',
-        requirements: 'Knowledge of modern programming languages and version control (Git).',
+        requirements: 'Intermediate, Knowledge of modern programming languages and version control (Git).',
         featured: false,
         postedDate: new Date(),
         applications: 3
@@ -620,7 +620,7 @@ const fixedJobs = [
         salary: '55,000 - 70,000 PKR',
         experience: '0-1 years',
         description: 'Manage warehouse operations, inventory, and staff coordination.',
-        requirements: 'Knowledge of inventory systems; leadership and planning skills.',
+        requirements: 'Intermediate, knowledge of inventory systems; leadership and planning skills.',
         featured: false,
         postedDate: new Date(),
         applications: 14
@@ -635,7 +635,7 @@ const fixedJobs = [
         salary: '50,000 - 70,000 PKR',
         experience: '0-1 years',
         description: 'Oversee data collection, storage, and reporting processes.',
-        requirements: 'Experience with databases and data quality practices.',
+        requirements: 'Intermediate, experience with databases and data quality practices.',
         featured: false,
         postedDate: new Date(),
         applications: 15
@@ -650,7 +650,7 @@ const fixedJobs = [
         salary: '45,000 - 60,000 PKR',
         experience: '0-1 years',
         description: 'Handle administrative tasks and financial record keeping.',
-        requirements: 'Basic accounting knowledge; MS Excel proficiency.',
+        requirements: 'Bachelor degree, Basic accounting knowledge; MS Excel proficiency.',
         featured: false,
         postedDate: new Date(),
         applications: 5
@@ -680,7 +680,7 @@ const fixedJobs = [
         salary: '35,000 - 45,000 PKR',
         experience: '0-1 years',
         description: 'General assistance for office operations and documentation.',
-        requirements: 'Good communication and basic computer skills.',
+        requirements: 'Bachelor degree, Good communication and basic computer skills.',
         featured: false,
         postedDate: new Date(),
         applications: 5
@@ -695,7 +695,7 @@ const fixedJobs = [
         salary: '30,000 - 40,000 PKR',
         experience: '0-1 years',
         description: 'Ensure safety and security of premises and personnel.',
-        requirements: 'Physically fit; vigilance and discipline.',
+        requirements: 'Physically fit, vigilance and discipline.',
         featured: false,
         postedDate: new Date(),
         applications: 60
@@ -710,7 +710,7 @@ const fixedJobs = [
         salary: '35,000 - 45,000 PKR',
         experience: '0-1 years',
         description: 'Support administrative tasks and maintain records.',
-        requirements: 'Basic MS Office skills and attention to detail.',
+        requirements: 'Intermediate, Basic MS Office skills and attention to detail.',
         featured: false,
         postedDate: new Date(),
         applications: 11
@@ -725,7 +725,7 @@ const fixedJobs = [
         salary: '45,000 - 60,000 PKR',
         experience: '0-1 years',
         description: 'Manage administrative functions and office procedures.',
-        requirements: 'Strong organizational and documentation skills.',
+        requirements: 'Bachelor degree, Strong organizational and documentation skills.',
         featured: false,
         postedDate: new Date(),
         applications: 2
@@ -740,7 +740,7 @@ const fixedJobs = [
         salary: '45,000 - 60,000 PKR',
         experience: '0-1 years',
         description: 'Oversee administrative duties and support management.',
-        requirements: 'Excellent coordination and communication skills.',
+        requirements: 'Bachelor degree, Excellent coordination and communication skills.',
         featured: false,
         postedDate: new Date(),
         applications: 1
@@ -755,7 +755,7 @@ const fixedJobs = [
         salary: '35,000 - 45,000 PKR',
         experience: '0-1 years',
         description: 'Maintain records and assist with daily office tasks.',
-        requirements: 'Record keeping and MS Office proficiency.',
+        requirements: 'Intermediate, Record keeping and MS Office proficiency.',
         featured: false,
         postedDate: new Date(),
         applications: 15
@@ -770,7 +770,7 @@ const fixedJobs = [
         salary: '50,000 - 65,000 PKR',
         experience: '0-1 years',
         description: 'Monitor and control daily operations and reporting.',
-        requirements: 'Analytical mindset; coordination across teams.',
+        requirements: 'Bachelor degree, Analytical mindset; coordination across teams.',
         featured: false,
         postedDate: new Date(),
         applications: 8
@@ -785,7 +785,7 @@ const fixedJobs = [
         salary: '70,000 - 90,000 PKR',
         experience: '0-1 years',
         description: 'Plan and manage production schedules and teams.',
-        requirements: 'Leadership and coordination skills.',
+        requirements: 'Intermediate, Leadership and coordination skills.',
         featured: false,
         postedDate: new Date(),
         applications: 6
@@ -800,7 +800,7 @@ const fixedJobs = [
         salary: '40,000 - 55,000 PKR',
         experience: '0-1 years',
         description: 'Handle sales operations, customer interaction, and targets.',
-        requirements: 'Good communication and basic sales knowledge.',
+        requirements: 'Matric, Good communication and basic sales knowledge.',
         featured: false,
         postedDate: new Date(),
         applications: 50
