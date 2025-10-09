@@ -193,7 +193,7 @@ const fixedJobs = [
         id: 1,
         title: 'Pharmacist',
         company: 'Healthcare Solutions',
-        location: 'Lahore',
+        location: 'Punjab',
         type: 'full-time',
         category: 'healthcare',
         salary: '70,000 - 85,000 PKR',
@@ -208,7 +208,7 @@ const fixedJobs = [
         id: 2,
         title: 'Assistant Manager Food Chain',
         company: 'Food Services Ltd',
-        location: 'Multan',
+        location: 'Punjab',
         type: 'full-time',
         category: 'food-service',
         salary: '55,000 - 65,000 PKR',
@@ -223,7 +223,7 @@ const fixedJobs = [
         id: 3,
         title: 'Regional Sales Manager',
         company: 'Sales Corporation',
-        location: 'Faisalabad',
+        location: 'Punjab',
         type: 'full-time',
         category: 'sales',
         salary: '75,000 - 90,000 PKR',
@@ -238,7 +238,7 @@ const fixedJobs = [
         id: 4,
         title: 'Administrator in NGO',
         company: 'Social Welfare Foundation',
-        location: 'Islamabad',
+        location: 'Punjab',
         type: 'full-time',
         category: 'non-profit',
         salary: '50,000 - 65,000 PKR',
@@ -253,7 +253,7 @@ const fixedJobs = [
         id: 5,
         title: 'Receptionist Female Only',
         company: 'Corporate Office',
-        location: 'Sialkot',
+        location: 'Punjab',
         type: 'full-time',
         category: 'administration',
         salary: '45,000 - 55,000 PKR',
@@ -268,7 +268,7 @@ const fixedJobs = [
         id: 6,
         title: 'Computer Operator',
         company: 'IT Services',
-        location: 'Jhang',
+        location: 'Punjab',
         type: 'full-time',
         category: 'technology',
         salary: '32,000 - 40,000 PKR',
@@ -283,7 +283,7 @@ const fixedJobs = [
         id: 7,
         title: 'Field Supervisor',
         company: 'Construction Group',
-        location: 'Lahore',
+        location: 'Punjab',
         type: 'full-time',
         category: 'construction',
         salary: '70,000 - 85,000 PKR',
@@ -298,7 +298,7 @@ const fixedJobs = [
         id: 8,
         title: 'Assistant Accountant',
         company: 'Finance Solutions',
-        location: 'Karachi',
+        location: 'Punjab',
         type: 'full-time',
         category: 'finance',
         salary: '40,000 - 55,000 PKR',
@@ -313,7 +313,7 @@ const fixedJobs = [
         id: 9,
         title: 'Accountant',
         company: 'Financial Services',
-        location: 'Multan',
+        location: 'Punjab',
         type: 'full-time',
         category: 'finance',
         salary: '60,000 - 75,000 PKR',
@@ -328,7 +328,7 @@ const fixedJobs = [
         id: 10,
         title: 'Graphic Designer',
         company: 'Creative Studio',
-        location: 'Faisalabad',
+        location: 'Punjab',
         type: 'full-time',
         category: 'design',
         salary: '50,000 - 65,000 PKR',
@@ -343,7 +343,7 @@ const fixedJobs = [
         id: 11,
         title: 'Junior Graphic Designer',
         company: 'Design Agency',
-        location: 'Islamabad',
+        location: 'Punjab',
         type: 'full-time',
         category: 'design',
         salary: '40,000 - 55,000 PKR',
@@ -358,7 +358,7 @@ const fixedJobs = [
         id: 12,
         title: 'Customer Service Representative (CSR)',
         company: 'Service Center',
-        location: 'Sialkot',
+        location: 'Punjab',
         type: 'full-time',
         category: 'customer-service',
         salary: '30,000 - 45,000 PKR',
@@ -373,7 +373,7 @@ const fixedJobs = [
         id: 13,
         title: 'Office Boy',
         company: 'Corporate Services',
-        location: 'Jhang',
+        location: 'Punjab',
         type: 'full-time',
         category: 'administration',
         salary: '35,000 - 40,000 PKR',
@@ -388,7 +388,7 @@ const fixedJobs = [
         id: 14,
         title: 'Female Teacher (Eng, Math, Chemistry, Physics)',
         company: 'Educational Institute',
-        location: 'Lahore',
+        location: 'Punjab',
         type: 'full-time',
         category: 'education',
         salary: '40,000 - 45,000 PKR',
@@ -403,7 +403,7 @@ const fixedJobs = [
         id: 15,
         title: 'Office Assistant',
         company: 'Business Solutions',
-        location: 'Multan',
+        location: 'Punjab',
         type: 'full-time',
         category: 'administration',
         salary: '35,000 - 45,000 PKR',
@@ -418,7 +418,7 @@ const fixedJobs = [
         id: 16,
         title: 'Dispenser',
         company: 'Medical Center',
-        location: 'Faisalabad',
+        location: 'Punjab',
         type: 'full-time',
         category: 'healthcare',
         salary: '30,000 - 40,000 PKR',
@@ -433,7 +433,7 @@ const fixedJobs = [
         id: 17,
         title: 'Online Marketing Specialist',
         company: 'Digital Marketing Agency',
-        location: 'Islamabad',
+        location: 'Punjab',
         type: 'full-time',
         category: 'marketing',
         salary: '45,000 - 60,000 PKR',
@@ -548,6 +548,262 @@ const fixedJobs = [
         featured: false,
         postedDate: new Date('2024-03-05'),
         applications: 5
+    }
+    ,
+    {
+        id: 25,
+        title: 'Office Manager',
+        company: 'MyCareer Network',
+        location: 'Punjab',
+        type: 'full-time',
+        category: 'administration',
+        salary: '70,000 - 85,000 PKR',
+        experience: '0-1 years',
+        description: 'Oversee office operations, coordinate teams, and ensure efficient workflows.',
+        requirements: 'Bachelor degree preferred; strong coordination and communication skills.',
+        featured: false,
+        postedDate: new Date(),
+        applications: 5
+    },
+    {
+        id: 26,
+        title: 'Assistant Private Secretary',
+        company: 'MyCareer Network',
+        location: 'Punjab',
+        type: 'full-time',
+        category: 'administration',
+        salary: '40,000 - 55,000 PKR',
+        experience: '0-1 years',
+        description: 'Assist executives with scheduling, correspondence, and documentation.',
+        requirements: 'Strong organizational skills; proficiency with MS Office.',
+        featured: false,
+        postedDate: new Date(),
+        applications: 6
+    },
+    {
+        id: 27,
+        title: 'Computer Programmer',
+        company: 'MyCareer Network',
+        location: 'Punjab',
+        type: 'full-time',
+        category: 'technology',
+        salary: '55,000 - 70,000 PKR',
+        experience: '0-1 years',
+        description: 'Develop and maintain software applications as part of a team.',
+        requirements: 'Knowledge of modern programming languages and version control (Git).',
+        featured: false,
+        postedDate: new Date(),
+        applications: 3
+    },
+    {
+        id: 28,
+        title: 'Driver',
+        company: 'MyCareer Network',
+        location: 'Punjab',
+        type: 'full-time',
+        category: 'administration',
+        salary: '30,000 - 40,000 PKR',
+        experience: '0-1 years',
+        description: 'Provide safe and timely transportation services as assigned.',
+        requirements: 'Valid driving license and clean driving record.',
+        featured: false,
+        postedDate: new Date(),
+        applications: 33
+    },
+    {
+        id: 29,
+        title: 'Manager Warehouse',
+        company: 'MyCareer Network',
+        location: 'Punjab',
+        type: 'full-time',
+        category: 'administration',
+        salary: '55,000 - 70,000 PKR',
+        experience: '0-1 years',
+        description: 'Manage warehouse operations, inventory, and staff coordination.',
+        requirements: 'Knowledge of inventory systems; leadership and planning skills.',
+        featured: false,
+        postedDate: new Date(),
+        applications: 14
+    },
+    {
+        id: 30,
+        title: 'Data Manager',
+        company: 'MyCareer Network',
+        location: 'Punjab',
+        type: 'full-time',
+        category: 'technology',
+        salary: '50,000 - 70,000 PKR',
+        experience: '0-1 years',
+        description: 'Oversee data collection, storage, and reporting processes.',
+        requirements: 'Experience with databases and data quality practices.',
+        featured: false,
+        postedDate: new Date(),
+        applications: 15
+    },
+    {
+        id: 31,
+        title: 'Admin and Finance Officer',
+        company: 'MyCareer Network',
+        location: 'Punjab',
+        type: 'full-time',
+        category: 'finance',
+        salary: '45,000 - 60,000 PKR',
+        experience: '0-1 years',
+        description: 'Handle administrative tasks and financial record keeping.',
+        requirements: 'Basic accounting knowledge; MS Excel proficiency.',
+        featured: false,
+        postedDate: new Date(),
+        applications: 5
+    },
+    {
+        id: 32,
+        title: 'Social Media Manager',
+        company: 'MyCareer Network',
+        location: 'Punjab',
+        type: 'full-time',
+        category: 'marketing',
+        salary: '45,000 - 60,000 PKR',
+        experience: '0-1 years',
+        description: 'Plan and execute social media strategies and content.',
+        requirements: 'Knowledge of social platforms and content planning.',
+        featured: false,
+        postedDate: new Date(),
+        applications: 2
+    },
+    {
+        id: 33,
+        title: 'Assistant',
+        company: 'MyCareer Network',
+        location: 'Punjab',
+        type: 'full-time',
+        category: 'administration',
+        salary: '35,000 - 45,000 PKR',
+        experience: '0-1 years',
+        description: 'General assistance for office operations and documentation.',
+        requirements: 'Good communication and basic computer skills.',
+        featured: false,
+        postedDate: new Date(),
+        applications: 5
+    },
+    {
+        id: 34,
+        title: 'Security Guard',
+        company: 'MyCareer Network',
+        location: 'Punjab',
+        type: 'full-time',
+        category: 'administration',
+        salary: '30,000 - 40,000 PKR',
+        experience: '0-1 years',
+        description: 'Ensure safety and security of premises and personnel.',
+        requirements: 'Physically fit; vigilance and discipline.',
+        featured: false,
+        postedDate: new Date(),
+        applications: 60
+    },
+    {
+        id: 35,
+        title: 'Junior Assistant',
+        company: 'MyCareer Network',
+        location: 'Punjab',
+        type: 'full-time',
+        category: 'administration',
+        salary: '35,000 - 45,000 PKR',
+        experience: '0-1 years',
+        description: 'Support administrative tasks and maintain records.',
+        requirements: 'Basic MS Office skills and attention to detail.',
+        featured: false,
+        postedDate: new Date(),
+        applications: 11
+    },
+    {
+        id: 36,
+        title: 'Administrative Officer',
+        company: 'MyCareer Network',
+        location: 'Punjab',
+        type: 'full-time',
+        category: 'administration',
+        salary: '45,000 - 60,000 PKR',
+        experience: '0-1 years',
+        description: 'Manage administrative functions and office procedures.',
+        requirements: 'Strong organizational and documentation skills.',
+        featured: false,
+        postedDate: new Date(),
+        applications: 2
+    },
+    {
+        id: 37,
+        title: 'Admin Officer',
+        company: 'MyCareer Network',
+        location: 'Punjab',
+        type: 'full-time',
+        category: 'administration',
+        salary: '45,000 - 60,000 PKR',
+        experience: '0-1 years',
+        description: 'Oversee administrative duties and support management.',
+        requirements: 'Excellent coordination and communication skills.',
+        featured: false,
+        postedDate: new Date(),
+        applications: 1
+    },
+    {
+        id: 38,
+        title: 'Office Assistant + Record Keeper',
+        company: 'MyCareer Network',
+        location: 'Punjab',
+        type: 'full-time',
+        category: 'administration',
+        salary: '35,000 - 45,000 PKR',
+        experience: '0-1 years',
+        description: 'Maintain records and assist with daily office tasks.',
+        requirements: 'Record keeping and MS Office proficiency.',
+        featured: false,
+        postedDate: new Date(),
+        applications: 15
+    },
+    {
+        id: 39,
+        title: 'Operation Controller',
+        company: 'MyCareer Network',
+        location: 'Punjab',
+        type: 'full-time',
+        category: 'administration',
+        salary: '50,000 - 65,000 PKR',
+        experience: '0-1 years',
+        description: 'Monitor and control daily operations and reporting.',
+        requirements: 'Analytical mindset; coordination across teams.',
+        featured: false,
+        postedDate: new Date(),
+        applications: 8
+    },
+    {
+        id: 40,
+        title: 'Production Manager',
+        company: 'MyCareer Network',
+        location: 'Punjab',
+        type: 'full-time',
+        category: 'administration',
+        salary: '70,000 - 90,000 PKR',
+        experience: '0-1 years',
+        description: 'Plan and manage production schedules and teams.',
+        requirements: 'Leadership and coordination skills.',
+        featured: false,
+        postedDate: new Date(),
+        applications: 6
+    },
+    {
+        id: 41,
+        title: 'Sales Man',
+        company: 'MyCareer Network',
+        location: 'Punjab',
+        type: 'full-time',
+        category: 'sales',
+        salary: '40,000 - 55,000 PKR',
+        experience: '0-1 years',
+        description: 'Handle sales operations, customer interaction, and targets.',
+        requirements: 'Good communication and basic sales knowledge.',
+        featured: false,
+        postedDate: new Date(),
+        applications: 50
     }
 ];
 
@@ -730,13 +986,13 @@ function searchJobs() {
     // Apply text search
     if (searchTerm.trim()) {
         filteredJobs = filteredJobs.filter(job => 
-            job.title.toLowerCase().includes(searchTerm) ||
-            job.company.toLowerCase().includes(searchTerm) ||
-            job.category.toLowerCase().includes(searchTerm) ||
-            job.location.toLowerCase().includes(searchTerm) ||
-            job.description.toLowerCase().includes(searchTerm) ||
-            job.requirements.toLowerCase().includes(searchTerm)
-        );
+        job.title.toLowerCase().includes(searchTerm) ||
+        job.company.toLowerCase().includes(searchTerm) ||
+        job.category.toLowerCase().includes(searchTerm) ||
+        job.location.toLowerCase().includes(searchTerm) ||
+        job.description.toLowerCase().includes(searchTerm) ||
+        job.requirements.toLowerCase().includes(searchTerm)
+    );
     }
     
     // Apply location filter
@@ -936,6 +1192,8 @@ async function loadFeaturedJobs() {
     try {
         // Use fixed jobs data
         jobs = [...fixedJobs];
+        // Normalize all job locations to Punjab
+        jobs = jobs.map(job => ({ ...job, location: 'Punjab' }));
         console.log('Jobs loaded from fixed data:', jobs.length);
         
         const featuredJobs = jobs.filter(job => job.featured).slice(0, 6);
@@ -954,7 +1212,7 @@ async function loadFeaturedJobs() {
 
 async function loadAllJobs(jobsList = null) {
     try {
-        const jobsToDisplay = jobsList || jobs;
+        const jobsToDisplay = (jobsList || jobs).map(job => ({ ...job, location: 'Punjab' }));
         const container = document.getElementById('allJobs');
         const resultsSummary = document.getElementById('resultsSummary');
         
@@ -999,41 +1257,42 @@ async function loadAllJobs(jobsList = null) {
 // Job Card Creation
 function createJobCard(job, showFullDetails = false) {
     const daysAgo = getDaysAgo(job.postedDate);
+    const normalizedJob = { ...job, location: 'Punjab' };
     
     return `
         <div class="job-card bg-white rounded-xl p-6 shadow-md hover-scale cursor-pointer" onclick="showJobDetails(${job.id})">
             <div class="flex justify-between items-start mb-4">
                 <div class="flex-1">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">${job.title}</h3>
-                    <p class="text-lg text-primary font-semibold mb-1">${job.company}</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">${normalizedJob.title}</h3>
+                    <p class="text-lg text-primary font-semibold mb-1">${normalizedJob.company}</p>
                     <div class="flex items-center text-gray-600 text-sm space-x-4">
                         <span class="flex items-center">
                             <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.899a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                             </svg>
-                            ${job.location}
+                            ${normalizedJob.location}
                         </span>
                         <span class="flex items-center">
                             <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
-                            ${job.type.charAt(0).toUpperCase() + job.type.slice(1).replace('-', ' ')}
+                            ${normalizedJob.type.charAt(0).toUpperCase() + normalizedJob.type.slice(1).replace('-', ' ')}
                         </span>
                     </div>
                 </div>
-                ${job.featured ? '<span class="bg-accent text-white px-2 py-1 rounded-full text-xs font-medium">Featured</span>' : ''}
+                ${normalizedJob.featured ? '<span class="bg-accent text-white px-2 py-1 rounded-full text-xs font-medium">Featured</span>' : ''}
             </div>
             
             <div class="mb-4">
-                <p class="text-gray-600 text-sm line-clamp-3">${job.description.substring(0, 120)}...</p>
+                <p class="text-gray-600 text-sm line-clamp-3">${normalizedJob.description.substring(0, 120)}...</p>
             </div>
             
             <div class="flex justify-between items-center">
                 <div class="text-sm text-gray-500">
-                    <span class="font-semibold text-success">${job.salary}</span>
+                    <span class="font-semibold text-success">${normalizedJob.salary}</span>
                 </div>
-                <button onclick="event.stopPropagation(); showJobDetails(${job.id})" class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-secondary transition-colors">
+                <button onclick="event.stopPropagation(); showJobDetails(${normalizedJob.id})" class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-secondary transition-colors">
                     View Details
                 </button>
             </div>
@@ -1043,7 +1302,7 @@ function createJobCard(job, showFullDetails = false) {
 
 // Job Details Modal
 function showJobDetails(jobId) {
-    const job = jobs.find(j => j.id === jobId);
+    const job = { ...jobs.find(j => j.id === jobId), location: 'Punjab' };
     if (!job) {
         showMessage('Job not found!', 'error');
         return;
@@ -1059,6 +1318,25 @@ function showJobDetails(jobId) {
     }
     
     const daysAgo = getDaysAgo(job.postedDate);
+    // Conditionally include advanced requirements based on job category/title
+    const titleText = (job.title || '').toLowerCase();
+    const categoryText = (job.category || '').toLowerCase();
+    const isTechRole = categoryText === 'technology' || /developer|programmer|engineer|software|website|computer/.test(titleText);
+    const isDataRole = /data manager|data analyst|data/.test(titleText) || categoryText === 'technology';
+    const isFinanceRole = categoryText === 'finance' || /accountant|finance|accounts/.test(titleText);
+    const shouldIncludeVersionControl = isTechRole;
+    const shouldIncludeDatabase = isTechRole || isDataRole;
+    const shouldIncludeSecurity = isTechRole || isFinanceRole;
+    const extraRequirements = [];
+    if (shouldIncludeVersionControl) {
+        extraRequirements.push('Experience with version control systems (Git) and agile development methodologies');
+    }
+    if (shouldIncludeDatabase) {
+        extraRequirements.push('Knowledge of database design and optimization techniques');
+    }
+    if (shouldIncludeSecurity) {
+        extraRequirements.push('Understanding of security best practices and data protection regulations');
+    }
     
     container.innerHTML = `
         <!-- Job Header Section -->
@@ -1160,18 +1438,11 @@ function showJobDetails(jobId) {
                             <div class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                             <p class="text-sm sm:text-base">Strong communication skills and ability to work in a team environment</p>
                         </div>
+                        ${extraRequirements.map(r => `
                         <div class="flex items-start">
                             <div class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                            <p class="text-sm sm:text-base">Experience with version control systems (Git) and agile development methodologies</p>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                            <p class="text-sm sm:text-base">Knowledge of database design and optimization techniques</p>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                            <p class="text-sm sm:text-base">Understanding of security best practices and data protection regulations</p>
-                        </div>
+                            <p class="text-sm sm:text-base">${r}</p>
+                        </div>`).join('')}
                     </div>
                 </div>
             </div>
@@ -1197,7 +1468,7 @@ function showJobDetails(jobId) {
                             <span class="font-semibold text-gray-800 bg-blue-100 px-3 py-1 rounded-full text-sm capitalize">${job.category}</span>
                         </div>
                         <div class="flex justify-between items-center py-3">
-                            <span class="text-gray-600 font-medium">Applications:</span>
+                            <span class="text-gray-600 font-medium">Posts:</span>
                             <span class="font-semibold text-gray-800 bg-green-100 px-3 py-1 rounded-full text-sm">${job.applications}</span>
                         </div>
                     </div>
@@ -1380,7 +1651,7 @@ async function submitApplication(event) {
     const requiredFields = [
         'applicantName', 'fatherName', 'dateOfBirth', 'cnicNumber', 
         'contactNumber', 'gender', 'applicantEmail', 'address', 
-        'education', 'applicantExperience', 'skills', 'paymentScreenshot'
+        'education', 'applicantExperience', 'paymentScreenshot'
     ];
     const missingFields = [];
     
