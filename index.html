@@ -807,8 +807,9 @@
                                             class="w-full border-2 border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-gray-300">
                                     </div>
                                     <div class="space-y-2">
-                                        <label class="block text-sm font-semibold text-gray-700">CNIC Number *</label>
-                                        <input type="text" id="cnicNumber" required placeholder="12345-1234567-1"
+                                        <label class="block text-sm font-semibold text-gray-700">CNIC Number (13 digits — dashes optional) *</label>
+                                        <!-- Allow either 13 digits without dashes or dashed format like 12345-1234567-1 -->
+                                        <input type="text" id="cnicNumber" required placeholder="1234512345671 or 12345-1234567-1" inputmode="numeric" pattern="[0-9\-]*" oninput="this.value = this.value.replace(/[^0-9\-]/g,'').slice(0,15)"
                                             class="w-full border-2 border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-gray-300">
                                     </div>
                                     <div class="space-y-2">
