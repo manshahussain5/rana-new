@@ -1698,13 +1698,15 @@ async function submitApplication(event) {
     }
     console.log('Phone validation passed');
     
-    // Validate CNIC format
+    // Validate CNIC format (13 digits, no dashes)
     console.log('Validating CNIC...');
-    const cnic = document.getElementById('cnicNumber').value;
-    const cnicRegex = /^[0-9]{5}-[0-9]{7}-[0-9]{1}$/;
+    let cnic = document.getElementById('cnicNumber').value || '';
+    // sanitize - remove any non-digit characters
+    cnic = cnic.replace(/\D/g, '');
+    const cnicRegex = /^[0-9]{13}$/;
     if (!cnicRegex.test(cnic)) {
         console.log('CNIC validation failed');
-        showMessage('Please enter a valid CNIC number (format: 12345-1234567-1)', 'error');
+        showMessage('Please enter a valid CNIC number (13 digits, no dashes)', 'error');
         return;
     }
     console.log('CNIC validation passed');
