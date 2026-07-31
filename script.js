@@ -1020,11 +1020,12 @@ async function loadFeaturedJobs() {
         jobs = jobs.map(job => ({ ...job, location: 'Punjab' }));
         console.log('Jobs loaded from fixed data:', jobs.length);
         
-        // Show every job on the home page, with the featured ones listed first
-        const homeJobs = [
+        // Show only 9 jobs on the home page (featured first), all jobs are on the Jobs page
+        const sortedJobs = [
             ...jobs.filter(job => job.featured),
             ...jobs.filter(job => !job.featured)
         ];
+        const homeJobs = sortedJobs.slice(0, 9);
         const container = document.getElementById('featuredJobs');
 
         if (homeJobs.length === 0) {

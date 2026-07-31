@@ -800,9 +800,19 @@
 
             <!-- Featured Jobs -->
             <div class="mb-12">
-                <h2 class="text-3xl font-bold text-ntsSlate900 mb-8">Available Jobs</h2>
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-3xl font-bold text-ntsSlate900">Available Jobs</h2>
+                    <button onclick="showJobs()" class="bg-ntsBlue text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-ntsBlue700 transition-colors">
+                        View All Jobs →
+                    </button>
+                </div>
                 <div id="featuredJobs" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Featured jobs will be populated here -->
+                </div>
+                <div class="text-center mt-8">
+                    <button onclick="showJobs()" class="bg-gradient-to-r from-ntsBlue600 to-ntsBlue800 text-white px-8 py-3 rounded-xl font-semibold hover:from-ntsBlue700 hover:to-ntsBlue900 transition-all duration-300 shadow-md hover:shadow-lg">
+                        View All Jobs
+                    </button>
                 </div>
             </div>
         </div>
