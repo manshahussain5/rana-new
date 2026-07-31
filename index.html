@@ -300,6 +300,248 @@
             white-space: nowrap;
             animation: typewriter 3s steps(40, end);
         }
+
+        /* ===== Application form (screening form design) ===== */
+        .kcn {
+            --ink: #17231f;
+            --paper: #f6f4ee;
+            --teal: #1f4d43;
+            --teal-deep: #123128;
+            --gold: #c99a3d;
+            --line: #d8d2c2;
+            --muted: #5c665f;
+            --danger: #a8442f;
+            color: var(--ink);
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .kcn-lede {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 22px 24px;
+            margin-bottom: 18px;
+        }
+
+        .kcn-lede h2 {
+            font-size: 24px;
+            margin: 0 0 6px;
+            line-height: 1.8;
+            direction: rtl;
+            text-align: right;
+            color: var(--teal-deep);
+        }
+
+        .kcn-lede p {
+            margin: 0;
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.55;
+        }
+
+        .kcn-fee-tag {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #7a5a12;
+            background: #fdf5e4;
+            border: 1px solid #e6d3a4;
+            padding: 5px 11px;
+            border-radius: 6px;
+        }
+
+        .kcn-section {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 18px;
+        }
+
+        .kcn-section h3 {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .07em;
+            color: var(--teal);
+            margin: 0 0 18px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .kcn-section h3::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+
+        .kcn-field {
+            margin-bottom: 16px;
+        }
+
+        .kcn-field:last-child {
+            margin-bottom: 0;
+        }
+
+        .kcn-field>label {
+            display: block;
+            font-size: 13.5px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: var(--ink);
+        }
+
+        .kcn-field .urdu {
+            font-weight: 400;
+            color: var(--muted);
+            font-size: 14px;
+            margin-inline-start: 6px;
+        }
+
+        .kcn-req {
+            color: var(--danger);
+        }
+
+        .kcn-field input[type="text"],
+        .kcn-field input[type="tel"],
+        .kcn-field input[type="email"],
+        .kcn-field input[type="date"],
+        .kcn-field input[type="file"],
+        .kcn-field select,
+        .kcn-field textarea {
+            width: 100%;
+            padding: 11px 12px;
+            border: 1.5px solid var(--line);
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 14px;
+            background: #fdfcfa;
+            color: var(--ink);
+            transition: border-color .15s;
+        }
+
+        .kcn-field input:focus,
+        .kcn-field select:focus,
+        .kcn-field textarea:focus {
+            outline: none;
+            border-color: var(--teal);
+        }
+
+        .kcn-field textarea {
+            resize: vertical;
+            min-height: 70px;
+        }
+
+        .kcn-row2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        @media (max-width: 560px) {
+            .kcn-row2 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .kcn-radio-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .kcn-radio {
+            flex: 1;
+            min-width: 110px;
+            position: relative;
+        }
+
+        .kcn-radio input {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .kcn-radio label {
+            display: block;
+            text-align: center;
+            padding: 10px 8px;
+            border: 1.5px solid var(--line);
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 13.5px;
+            cursor: pointer;
+            margin: 0;
+            transition: all .15s;
+        }
+
+        .kcn-radio input:checked+label {
+            border-color: var(--teal);
+            background: #e8f0eb;
+            color: var(--teal-deep);
+        }
+
+        .kcn-hint {
+            font-size: 12px;
+            color: var(--muted);
+            margin-top: 5px;
+        }
+
+        .kcn-pay {
+            background: #fdf9f0;
+            border-color: #e6d3a4;
+        }
+
+        .kcn-pay .kcn-amount {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--teal-deep);
+        }
+
+        .kcn-actions {
+            display: flex;
+            gap: 12px;
+            padding-bottom: 8px;
+        }
+
+        .kcn-btn {
+            flex: 1;
+            padding: 14px 22px;
+            border-radius: 9px;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            border: 1.5px solid var(--line);
+            background: #fff;
+            color: var(--ink);
+            transition: background .15s, transform .1s;
+        }
+
+        .kcn-btn-primary {
+            background: var(--teal-deep);
+            border-color: var(--teal-deep);
+            color: #fff;
+        }
+
+        .kcn-btn-primary:hover {
+            background: var(--teal);
+        }
+
+        .kcn-btn:active {
+            transform: scale(.99);
+        }
+
+        .kcn-note {
+            text-align: center;
+            font-size: 12px;
+            color: var(--muted);
+            margin-top: 14px;
+        }
     </style>
 </head>
 
@@ -360,7 +602,8 @@
                 </div>
 
                 <div class="md:hidden">
-                    <button onclick="toggleMobileMenu()" class="text-ntsWhite hover:text-ntsBlue100">
+                    <button onclick="toggleMobileMenu()" aria-label="Open menu"
+                        class="text-ntsWhite hover:text-ntsBlue100 p-2 -mr-2 flex items-center justify-center min-w-[44px] min-h-[44px]">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h16M4 18h16"></path>
@@ -464,18 +707,17 @@
                         <!-- Quick Search Tags -->
                         <div class="mt-4 flex flex-wrap gap-2">
                             <span class="text-ntsSlate600 text-sm">Popular searches:</span>
-                            <button
-                                class="bg-ntsSlate100 text-ntsSlate700 px-3 py-1 rounded-full text-sm hover:bg-ntsBlue100 hover:text-ntsBlue700 transition-colors">Software
-                                Engineer</button>
-                            <button
-                                class="bg-ntsSlate100 text-ntsSlate700 px-3 py-1 rounded-full text-sm hover:bg-ntsBlue100 hover:text-ntsBlue700 transition-colors">Marketing
-                                Manager</button>
-                            <button
-                                class="bg-ntsSlate100 text-ntsSlate700 px-3 py-1 rounded-full text-sm hover:bg-ntsBlue100 hover:text-ntsBlue700 transition-colors">Data
-                                Analyst</button>
-                            <button
-                                class="bg-ntsSlate100 text-ntsSlate700 px-3 py-1 rounded-full text-sm hover:bg-ntsBlue100 hover:text-ntsBlue700 transition-colors">Remote
-                                Jobs</button>
+                            <button onclick="quickSearch('Office Assistant')"
+                                class="bg-ntsSlate100 text-ntsSlate700 px-4 py-2 rounded-full text-sm hover:bg-ntsBlue100 hover:text-ntsBlue700 transition-colors">Office
+                                Assistant</button>
+                            <button onclick="quickSearch('Cashier')"
+                                class="bg-ntsSlate100 text-ntsSlate700 px-4 py-2 rounded-full text-sm hover:bg-ntsBlue100 hover:text-ntsBlue700 transition-colors">Cashier</button>
+                            <button onclick="quickSearch('Security Guard')"
+                                class="bg-ntsSlate100 text-ntsSlate700 px-4 py-2 rounded-full text-sm hover:bg-ntsBlue100 hover:text-ntsBlue700 transition-colors">Security
+                                Guard</button>
+                            <button onclick="quickSearch('Data Entry Operator')"
+                                class="bg-ntsSlate100 text-ntsSlate700 px-4 py-2 rounded-full text-sm hover:bg-ntsBlue100 hover:text-ntsBlue700 transition-colors">Data
+                                Entry</button>
                         </div>
                     </div>
                 </div>
@@ -558,7 +800,7 @@
 
             <!-- Featured Jobs -->
             <div class="mb-12">
-                <h2 class="text-3xl font-bold text-ntsSlate900 mb-8">Featured Jobs</h2>
+                <h2 class="text-3xl font-bold text-ntsSlate900 mb-8">Available Jobs</h2>
                 <div id="featuredJobs" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Featured jobs will be populated here -->
                 </div>
@@ -724,142 +966,82 @@
                 </div>
                 <div class="flex-1 bg-gradient-to-br from-gray-50 to-white overflow-y-auto min-h-0">
                     <div class="px-2 sm:px-4 lg:px-8 py-4 sm:py-6 lg:py-8 pb-16 sm:pb-20">
-                        <form id="applicationForm" class="space-y-4" onsubmit="submitApplication(event)">
-                            <!-- Enhanced Fee Notice -->
-                            <div
-                                class="relative overflow-hidden bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-200 p-4 shadow-sm">
-                                <div
-                                    class="absolute top-0 right-0 w-20 h-20 bg-blue-100 rounded-full -translate-y-10 translate-x-10">
-                                </div>
-                                <div class="relative flex items-start space-x-4">
-                                    <div
-                                        class="flex-shrink-0 w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center">
-                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-lg font-bold text-blue-900 mb-2">Application Fee Required</h4>
-                                        <p class="text-blue-700 leading-relaxed">To apply for this position, a
-                                            registration fee of <span class="font-bold text-blue-900 text-lg">PKR
-                                                500</span> is required. Please make the payment and upload a screenshot
-                                            as proof.</p>
-                                    </div>
-                                </div>
+                        <form id="applicationForm" class="kcn" onsubmit="submitApplication(event)">
+
+                            <!-- Intro -->
+                            <div class="kcn-lede">
+                                <h2>ملازمت کے لیے درخواست فارم</h2>
+                                <p>Fill this short form to apply. It takes about 3 minutes and helps us match you to the
+                                    right role faster. Shortlisted candidates are contacted by phone.</p>
+                                <span class="kcn-fee-tag">Registration fee: PKR 500 — payment screenshot required</span>
                             </div>
 
-                            <!-- Email Notification Notice -->
-                            <div
-                                class="relative overflow-hidden bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border border-green-200 p-4 shadow-sm">
-                                <div
-                                    class="absolute top-0 right-0 w-20 h-20 bg-green-100 rounded-full -translate-y-10 translate-x-10">
-                                </div>
-                                <div class="relative flex items-start space-x-4">
-                                    <div
-                                        class="flex-shrink-0 w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center">
-                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-lg font-bold text-green-900 mb-2">Application Sent via Email
-                                        </h4>
-                                        <p class="text-green-700 leading-relaxed">Your application will be automatically
-                                            sent to our email system. You may be redirected to your email client to
-                                            complete the submission process.</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <!-- Basic Details -->
+                            <div class="kcn-section">
+                                <h3>Basic Details</h3>
 
-                            <!-- Personal Information Section -->
-                            <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
-                                <h4 class="text-base font-bold text-gray-800 mb-3 flex items-center">
-                                    <div class="w-6 h-6 bg-blue-100 rounded-lg flex items-center justify-center mr-2">
-                                        <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z">
-                                            </path>
-                                        </svg>
+                                <div class="kcn-field">
+                                    <label>Full Name <span class="urdu">پورا نام</span></label>
+                                    <input type="text" id="applicantName" placeholder="e.g. Ahmed Raza">
+                                </div>
+
+                                <div class="kcn-row2">
+                                    <div class="kcn-field">
+                                        <label>Father's Name <span class="urdu">والد کا نام</span></label>
+                                        <input type="text" id="fatherName">
                                     </div>
-                                    Personal Information
-                                </h4>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <div class="space-y-2">
-                                        <label class="block text-sm font-semibold text-gray-700">Full Name *</label>
-                                        <input type="text" id="applicantName" required
-                                            class="w-full border-2 border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-gray-300">
+                                    <div class="kcn-field">
+                                        <label>Date of Birth <span class="urdu">تاریخ پیدائش</span></label>
+                                        <input type="date" id="dateOfBirth">
                                     </div>
-                                    <div class="space-y-2">
-                                        <label class="block text-sm font-semibold text-gray-700">Father's Name *</label>
-                                        <input type="text" id="fatherName" required
-                                            class="w-full border-2 border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-gray-300">
-                                    </div>
-                                    <div class="space-y-2">
-                                        <label class="block text-sm font-semibold text-gray-700">Date of Birth *</label>
-                                        <input type="date" id="dateOfBirth" required
-                                            class="w-full border-2 border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-gray-300">
-                                    </div>
-                                    <div class="space-y-2">
-                                        <label class="block text-sm font-semibold text-gray-700">CNIC Number (13 digits — dashes optional) *</label>
+                                </div>
+
+                                <div class="kcn-row2">
+                                    <div class="kcn-field">
+                                        <label>CNIC Number <span class="urdu">شناختی کارڈ</span></label>
                                         <!-- Allow either 13 digits without dashes or dashed format like 12345-1234567-1 -->
-                                        <input type="text" id="cnicNumber" required placeholder="1234512345671 or 12345-1234567-1" inputmode="numeric" pattern="[0-9\-]*" oninput="this.value = this.value.replace(/[^0-9\-]/g,'').slice(0,15)"
-                                            class="w-full border-2 border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-gray-300">
+                                        <input type="text" id="cnicNumber"
+                                            placeholder="1234512345671 or 12345-1234567-1" inputmode="numeric"
+                                            oninput="this.value = this.value.replace(/[^0-9\-]/g,'').slice(0,15)">
+                                        <p class="kcn-hint">13 digits — dashes optional.</p>
                                     </div>
-                                    <div class="space-y-2">
-                                        <label class="block text-sm font-semibold text-gray-700">Contact Number
-                                            *</label>
-                                        <input type="tel" id="contactNumber" required placeholder="+92-300-1234567"
-                                            class="w-full border-2 border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-gray-300">
+                                    <div class="kcn-field">
+                                        <label>Contact Number <span class="urdu">موبائل نمبر</span></label>
+                                        <input type="tel" id="contactNumber" placeholder="03XX-XXXXXXX">
                                     </div>
-                                    <div class="space-y-2">
-                                        <label class="block text-sm font-semibold text-gray-700">Gender *</label>
-                                        <select id="gender" required
-                                            class="w-full border-2 border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-gray-300">
+                                </div>
+
+                                <div class="kcn-row2">
+                                    <div class="kcn-field">
+                                        <label>Gender <span class="urdu">جنس</span></label>
+                                        <select id="gender">
                                             <option value="">Select Gender</option>
                                             <option value="male">Male</option>
                                             <option value="female">Female</option>
                                             <option value="other">Other</option>
                                         </select>
                                     </div>
-                                    <div class="space-y-2">
-                                        <label class="block text-sm font-semibold text-gray-700">Email Address *</label>
-                                        <input type="email" id="applicantEmail" required
-                                            class="w-full border-2 border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-gray-300">
+                                    <div class="kcn-field">
+                                        <label>Email Address <span class="urdu">ای میل</span></label>
+                                        <input type="email" id="applicantEmail">
                                     </div>
-                                    <div class="space-y-2">
-                                        <label class="block text-sm font-semibold text-gray-700">Address *</label>
-                                        <textarea id="address" required rows="2"
-                                            class="w-full border-2 border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-gray-300 resize-none"
-                                            placeholder="Enter your complete address"></textarea>
-                                    </div>
+                                </div>
+
+                                <div class="kcn-field">
+                                    <label>Address <span class="urdu">پتہ</span></label>
+                                    <textarea id="address" rows="2"
+                                        placeholder="Enter your complete address"></textarea>
                                 </div>
                             </div>
 
-                            <!-- Education & Experience Section -->
-                            <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
-                                <h4 class="text-base font-bold text-gray-800 mb-3 flex items-center">
-                                    <div class="w-6 h-6 bg-blue-100 rounded-lg flex items-center justify-center mr-2">
-                                        <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    Education & Experience
-                                </h4>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <div class="space-y-2">
-                                        <label class="block text-sm font-semibold text-gray-700">Education *</label>
-                                        <select id="education" required
-                                            class="w-full border-2 border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-gray-300">
+                            <!-- Position & Fit -->
+                            <div class="kcn-section">
+                                <h3>Position &amp; Fit</h3>
+
+                                <div class="kcn-row2">
+                                    <div class="kcn-field">
+                                        <label>Education <span class="urdu">تعلیم</span></label>
+                                        <select id="education">
                                             <option value="">Select Education Level</option>
                                             <option value="matric">Matric (10th Grade)</option>
                                             <option value="intermediate">Intermediate (12th Grade)</option>
@@ -869,11 +1051,9 @@
                                             <option value="other">Other</option>
                                         </select>
                                     </div>
-                                    <div class="space-y-2">
-                                        <label class="block text-sm font-semibold text-gray-700">Experience (Years)
-                                            *</label>
-                                        <select id="applicantExperience" required
-                                            class="w-full border-2 border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-gray-300">
+                                    <div class="kcn-field">
+                                        <label>Experience <span class="urdu">تجربہ</span></label>
+                                        <select id="applicantExperience">
                                             <option value="">Select Experience</option>
                                             <option value="0-1">0-1 Years</option>
                                             <option value="1-3">1-3 Years</option>
@@ -883,180 +1063,103 @@
                                         </select>
                                     </div>
                                 </div>
-                            </div>
 
-                            <!-- Skills Section -->
-                            <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
-                                <h4 class="text-base font-bold text-gray-800 mb-3 flex items-center">
-                                    <div class="w-6 h-6 bg-purple-100 rounded-lg flex items-center justify-center mr-2">
-                                        <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
-                                            </path>
-                                        </svg>
+                                <div class="kcn-field">
+                                    <label>Are you available for the listed shift/timing?</label>
+                                    <div class="kcn-radio-group">
+                                        <div class="kcn-radio">
+                                            <!-- No native `required`: these inputs are visually hidden (opacity:0), and Chrome
+                                                 silently blocks submit on an unfocusable invalid control. Validated in JS instead. -->
+                                            <input type="radio" name="shiftAvailable" id="shift-yes" value="Yes">
+                                            <label for="shift-yes">Yes</label>
+                                        </div>
+                                        <div class="kcn-radio">
+                                            <input type="radio" name="shiftAvailable" id="shift-no" value="No">
+                                            <label for="shift-no">No</label>
+                                        </div>
                                     </div>
-                                    Skills & Expertise
-                                </h4>
-                                <div class="space-y-2">
-                                    <label class="block text-sm font-semibold text-gray-700">Skills (Optional)</label>
-                                    <textarea id="skills" rows="3"
-                                        class="w-full border-2 border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 hover:border-gray-300 resize-none"
-                                        placeholder="List your skills, separated by commas (e.g., JavaScript, Python, Project Management, Communication)"></textarea>
-                                    <p class="text-sm text-gray-500 mt-2">Optional: Separate multiple skills with commas
-                                    </p>
                                 </div>
-                            </div>
 
+                                <div class="kcn-field">
+                                    <label>Expected Salary (PKR) <span class="urdu">متوقع تنخواہ</span></label>
+                                    <input type="text" id="expectedSalary" placeholder="e.g. 30,000">
+                                </div>
 
-                            <!-- Cover Letter Section -->
-                            <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
-                                <h4 class="text-base font-bold text-gray-800 mb-3 flex items-center">
-                                    <div class="w-6 h-6 bg-purple-100 rounded-lg flex items-center justify-center mr-2">
-                                        <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    Cover Letter
-                                </h4>
-                                <div class="space-y-2">
-                                    <label class="block text-sm font-semibold text-gray-700">Tell us about yourself
-                                        (Optional)</label>
+                                <div class="kcn-field">
+                                    <label>Skills <span class="urdu">مہارتیں</span></label>
+                                    <textarea id="skills" rows="3"
+                                        placeholder="List your skills, separated by commas (e.g., MS Office, Customer Service, Record Keeping)"></textarea>
+                                    <p class="kcn-hint">Optional: separate multiple skills with commas.</p>
+                                </div>
+
+                                <div class="kcn-field">
+                                    <label>Why are you a good fit for this role?</label>
                                     <textarea id="coverLetter" rows="4"
-                                        class="w-full border-2 border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 hover:border-gray-300 resize-none"
                                         placeholder="Tell us why you're interested in this position and what makes you a great fit..."></textarea>
                                 </div>
                             </div>
 
-                            <!-- File Upload Section -->
-                            <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
-                                <h4 class="text-base font-bold text-gray-800 mb-3 flex items-center">
-                                    <div class="w-6 h-6 bg-orange-100 rounded-lg flex items-center justify-center mr-2">
-                                        <svg class="w-4 h-4 text-orange-600" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    Documents Upload
-                                </h4>
-                                <div class="space-y-6">
-                                    <div class="space-y-2">
-                                        <label class="block text-sm font-semibold text-gray-700">Upload CV/Resume
-                                            (Optional)</label>
-                                        <div class="relative">
-                                            <input type="file" id="cvFile" accept=".pdf,.doc,.docx"
-                                                class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 hover:border-gray-300 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-orange-700 hover:file:bg-orange-100">
-                                        </div>
-                                        <p class="text-sm text-gray-500 mt-2 flex items-center">
-                                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor"
-                                                viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                                                </path>
-                                            </svg>
-                                            Accepted formats: PDF, DOC, DOCX (Max 5MB) - Optional
-                                        </p>
-                                    </div>
+                            <!-- Documents -->
+                            <div class="kcn-section">
+                                <h3>Documents</h3>
+
+                                <div class="kcn-field">
+                                    <label>Upload CV / Resume <span class="urdu">سی وی</span></label>
+                                    <input type="file" id="cvFile" accept=".pdf,.doc,.docx">
+                                    <p class="kcn-hint">Optional — PDF, DOC or DOCX (max 5MB).</p>
                                 </div>
                             </div>
 
-                            <!-- Payment Section -->
-                            <div
-                                class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-4 border border-yellow-200 shadow-sm">
-                                <h4 class="text-base font-bold text-yellow-800 mb-3 flex items-center">
-                                    <div class="w-6 h-6 bg-yellow-500 rounded-lg flex items-center justify-center mr-2">
-                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    Payment Instructions
-                                </h4>
-                                <div class="space-y-4">
-                                    <p class="text-yellow-700 leading-relaxed">Please send <span
-                                            class="font-bold text-yellow-900 text-lg">PKR 500</span> to the following
-                                        account:</p>
-                                    <div class="bg-white rounded-xl p-4 border border-yellow-200">
-                                        <div class="flex items-center mb-2">
-                                            <div
-                                                class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-2">
-                                                <span class="text-white text-xs font-bold">E</span>
-                                            </div>
-                                            <span class="font-semibold text-gray-800">EasyPaisa</span>
-                                        </div>
-                                        <p class="text-sm text-gray-600">Please contact us for payment details</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <!-- Fee & Payment -->
+                            <div class="kcn-section kcn-pay">
+                                <h3>Registration Fee &amp; Payment</h3>
 
-                            <!-- Payment Screenshot Upload -->
-                            <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-                                <h4 class="text-base font-bold text-gray-800 mb-3 flex items-center">
-                                    <div class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center mr-3">
-                                        <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    Payment Confirmation
-                                </h4>
-                                <div class="space-y-2">
-                                    <label class="block text-sm font-semibold text-gray-700">Upload Payment Screenshot
-                                        *</label>
-                                    <div class="relative">
-                                        <input type="file" id="paymentScreenshot" accept="image/*" required
-                                            class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200 hover:border-gray-300 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-red-700 hover:file:bg-red-100">
-                                    </div>
-                                    <p class="text-sm text-gray-500 mt-2 flex items-center">
-                                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                        Upload a screenshot of your payment confirmation
+                                <p style="margin:0 0 6px;font-size:14px;">A one-time registration fee of</p>
+                                <p class="kcn-amount" style="margin:0 0 10px;">PKR 500</p>
+                                <p style="margin:0 0 16px;font-size:14px;line-height:1.6;color:#5c665f;">is required to
+                                    process your application. Send the amount to the JazzCash / Raast account below, then
+                                    upload the payment screenshot. <span style="direction:rtl;display:inline-block;">درخواست
+                                        کی فیس 500 روپے ہے</span></p>
+
+                                <!-- JazzCash / Raast merchant details -->
+                                <div
+                                    style="background:#fff;border:1px solid #e6d3a4;border-radius:10px;padding:16px 18px;margin-bottom:18px;">
+                                    <p
+                                        style="margin:0 0 10px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#c99a3d;">
+                                        JazzCash &nbsp;|&nbsp; Raast</p>
+                                    <p style="margin:0 0 4px;font-size:13px;color:#5c665f;">Account Title</p>
+                                    <p style="margin:0 0 12px;font-size:16px;font-weight:700;color:#123128;">JINNAH SCIENCE
+                                        COLLEGE</p>
+                                    <p style="margin:0 0 4px;font-size:13px;color:#5c665f;">Till ID</p>
+                                    <p
+                                        style="margin:0;font-size:22px;font-weight:700;letter-spacing:.12em;color:#123128;">
+                                        981463208</p>
+                                    <p style="margin:12px 0 0;font-size:12.5px;color:#5c665f;line-height:1.6;">Open
+                                        JazzCash → Pay → enter the Till ID above → pay PKR 500.
+                                        <span style="direction:rtl;display:inline-block;">جاز کیش میں ٹل آئی ڈی ڈال کر 500
+                                            روپے بھیجیں</span>
                                     </p>
                                 </div>
-                            </div>
 
-                            <!-- Additional Information Section -->
-                            <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-                                <h4 class="text-base font-bold text-gray-800 mb-3 flex items-center">
-                                    <div class="w-8 h-8 bg-indigo-100 rounded-lg flex items-center justify-center mr-3">
-                                        <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                    </div>
-                                    Additional Information
-                                </h4>
-                                <div class="text-gray-600">
-                                    <p class="text-sm leading-relaxed">By submitting this application, you agree to our
-                                        terms and conditions. We will review your application and contact you within 3-5
-                                        business days if selected. Please ensure all information is accurate and
-                                        up-to-date.</p>
+                                <div class="kcn-field">
+                                    <label>Upload Payment Screenshot <span class="urdu">ادائیگی کا اسکرین شاٹ</span>
+                                        <span class="kcn-req">*</span></label>
+                                    <!-- Enforced in submitApplication() rather than natively, so the applicant
+                                         always gets a visible message instead of a silent block. -->
+                                    <input type="file" id="paymentScreenshot" accept="image/*">
+                                    <p class="kcn-hint">Required — upload a clear screenshot of your payment
+                                        confirmation.</p>
                                 </div>
                             </div>
 
                             <!-- Action Buttons -->
-                            <div class="flex gap-4 pt-6">
-                                <button type="button" onclick="closeApplicationModal()"
-                                    class="flex-1 bg-gray-100 text-gray-700 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-all duration-200 border-2 border-gray-200 hover:border-gray-300 text-sm">
-                                    Cancel
-                                </button>
-                                <button type="submit"
-                                    class="flex-1 bg-gradient-to-r from-ntsBlue600 to-ntsBlue800 text-white py-3 rounded-lg font-semibold hover:from-ntsBlue700 hover:to-ntsBlue900 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-sm">
-                                    Submit Application
-                                </button>
+                            <div class="kcn-actions">
+                                <button type="button" class="kcn-btn" onclick="closeApplicationModal()">Cancel</button>
+                                <button type="submit" class="kcn-btn kcn-btn-primary">Submit Application</button>
                             </div>
+                            <p class="kcn-note">By submitting, you confirm the information is accurate. Applications are
+                                reviewed on a rolling basis; shortlisted candidates are contacted within 3–5 working days.
+                            </p>
                         </form>
                     </div>
                 </div>
@@ -1291,8 +1394,8 @@
                                 </div>
                                 <div>
                                     <h3 class="font-bold text-gray-800">Phone</h3>
-                                    <p class="text-gray-600">+92-51-844-444-1</p>
-                                    <p class="text-sm text-gray-500">Mon-Fri 9:00 AM - 5:00 PM</p>
+                                    <p class="text-gray-600">+92-42-3541-2200</p>
+                                    <p class="text-sm text-gray-500">Landline — Mon-Fri 9:00 AM - 5:00 PM</p>
                                 </div>
                             </div>
 
@@ -1303,7 +1406,6 @@
                                 <div>
                                     <h3 class="font-bold text-gray-800">Email</h3>
                                     <p class="text-gray-600">Mycareerofficial01@gmail.com</p>
-                                    <p class="text-sm text-gray-500">We respond within 24 hours</p>
                                 </div>
                             </div>
 
@@ -1313,7 +1415,7 @@
                                 </div>
                                 <div>
                                     <h3 class="font-bold text-gray-800">Address</h3>
-                                    <p class="text-gray-600">I-8, Islamabad</p>
+                                    <p class="text-gray-600">Thokar Niaz Baig, Lahore</p>
                                     <p class="text-gray-600">Pakistan</p>
                                 </div>
                             </div>
@@ -1403,13 +1505,13 @@
                     <h4 class="text-lg font-bold mb-4">Quick Links</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="#" onclick="showHome(); return false;"
-                                class="opacity-90 hover:opacity-100 transition-opacity">Home</a></li>
+                                class="opacity-90 hover:opacity-100 transition-opacity inline-block py-2">Home</a></li>
                         <li><a href="#" onclick="showJobs(); return false;"
-                                class="opacity-90 hover:opacity-100 transition-opacity">All Jobs</a></li>
+                                class="opacity-90 hover:opacity-100 transition-opacity inline-block py-2">All Jobs</a></li>
                         <li><a href="#" onclick="showAbout(); return false;"
-                                class="opacity-90 hover:opacity-100 transition-opacity">About Us</a></li>
+                                class="opacity-90 hover:opacity-100 transition-opacity inline-block py-2">About Us</a></li>
                         <li><a href="#" onclick="showServices(); return false;"
-                                class="opacity-90 hover:opacity-100 transition-opacity">Services</a></li>
+                                class="opacity-90 hover:opacity-100 transition-opacity inline-block py-2">Services</a></li>
                     </ul>
                 </div>
 
@@ -1426,9 +1528,9 @@
                 <div>
                     <h4 class="text-lg font-bold mb-4">Contact Info</h4>
                     <div class="space-y-2 text-sm">
-                        <p class="opacity-90">📞 +92-51-844-444-1</p>
+                        <p class="opacity-90">📞 +92-42-3541-2200</p>
                         <p class="opacity-90">✉️ Mycareerofficial01@gmail.com</p>
-                        <p class="opacity-90">📍 I-8, Islamabad, Pakistan</p>
+                        <p class="opacity-90">📍 Thokar Niaz Baig, Lahore, Pakistan</p>
                         <p class="opacity-90">🕒 Mon-Fri: 9:00 AM - 5:00 PM</p>
                     </div>
                 </div>
@@ -1442,7 +1544,8 @@
         </div>
     </footer>
 
-    <script src="email-service.js"></script>
+    <!-- email-service.js is already loaded in <head>; loading it twice throws
+         "Identifier 'EmailService' has already been declared". -->
     <script src="script.js"></script>
 </body>
 

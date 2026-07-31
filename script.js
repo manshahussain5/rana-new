@@ -187,41 +187,12 @@ async function verifyAuth() {
     }
 }
 
-// Fixed job data - 24 pre-configured jobs
+// Fixed job data - 27 pre-configured jobs
 const fixedJobs = [
-    {
-        id: 1,
-        title: 'Pharmacist',
-        company: 'Healthcare Solutions',
-        location: 'Punjab',
-        type: 'full-time',
-        category: 'healthcare',
-        salary: '70,000 - 85,000 PKR',
-        experience: '0-1 years',
-        description: 'Dispense medications and provide pharmaceutical care.',
-        requirements: 'Pharmacy degree, valid license, 2+ years experience.',
-        featured: true,
-        postedDate: new Date('2024-01-15'),
-        applications: 33
-    },
-    {
-        id: 2,
-        title: 'Assistant Manager Food Chain',
-        company: 'Food Services Ltd',
-        location: 'Punjab',
-        type: 'full-time',
-        category: 'food-service',
-        salary: '55,000 - 65,000 PKR',
-        experience: '6 months - 1 year',
-        description: 'Oversee daily operations and manage staff.',
-        requirements: 'B.Com or BBA, food service experience.',
-        featured: true,
-        postedDate: new Date('2024-01-20'),
-        applications: 15
-    },
     {
         id: 3,
         title: 'Regional Sales Manager',
+        titleUrdu: 'ریجنل سیلز مینیجر',
         company: 'Sales Corporation',
         location: 'Punjab',
         type: 'full-time',
@@ -230,28 +201,14 @@ const fixedJobs = [
         experience: '1 year',
         description: 'Lead sales operations and drive revenue growth.',
         requirements: 'Bachelors degree, sales management experience.',
-        featured: true,
+        featured: false,
         postedDate: new Date('2024-01-18'),
         applications: 7
     },
     {
-        id: 4,
-        title: 'Administrator in NGO',
-        company: 'Social Welfare Foundation',
-        location: 'Punjab',
-        type: 'full-time',
-        category: 'non-profit',
-        salary: '50,000 - 65,000 PKR',
-        experience: '0-1 years',
-        description: 'Handle administrative tasks and coordinate programs.',
-        requirements: 'Administration degree, 2+ years experience.',
-        featured: false,
-        postedDate: new Date('2024-01-22'),
-        applications: 5
-    },
-    {
         id: 5,
         title: 'Receptionist Female Only',
+        titleUrdu: 'ریسپشنسٹ (صرف خواتین)',
         company: 'Corporate Office',
         location: 'Punjab',
         type: 'full-time',
@@ -267,6 +224,7 @@ const fixedJobs = [
     {
         id: 6,
         title: 'Computer Operator',
+        titleUrdu: 'کمپیوٹر آپریٹر',
         company: 'IT Services',
         location: 'Punjab',
         type: 'full-time',
@@ -282,6 +240,7 @@ const fixedJobs = [
     {
         id: 7,
         title: 'Field Supervisor',
+        titleUrdu: 'فیلڈ سپروائزر',
         company: 'Construction Group',
         location: 'Punjab',
         type: 'full-time',
@@ -290,13 +249,14 @@ const fixedJobs = [
         experience: '6 months - 1 year',
         description: 'Supervise construction operations and manage workers.',
         requirements: 'Civil Engineering degree, 3+ years experience.',
-        featured: true,
+        featured: false,
         postedDate: new Date('2024-01-30'),
         applications: 7
     },
     {
         id: 8,
         title: 'Assistant Accountant',
+        titleUrdu: 'اسسٹنٹ اکاؤنٹنٹ',
         company: 'Finance Solutions',
         location: 'Punjab',
         type: 'full-time',
@@ -312,6 +272,7 @@ const fixedJobs = [
     {
         id: 9,
         title: 'Accountant',
+        titleUrdu: 'اکاؤنٹنٹ',
         company: 'Financial Services',
         location: 'Punjab',
         type: 'full-time',
@@ -320,43 +281,14 @@ const fixedJobs = [
         experience: '0-1 years',
         description: 'Handle financial reporting and tax preparation.',
         requirements: 'B.Com or BBA, 1+ years experience.',
-        featured: true,
+        featured: false,
         postedDate: new Date('2024-02-03'),
         applications: 6
     },
     {
-        id: 10,
-        title: 'Graphic Designer',
-        company: 'Creative Studio',
-        location: 'Punjab',
-        type: 'full-time',
-        category: 'design',
-        salary: '50,000 - 65,000 PKR',
-        experience: '0-1 years',
-        description: 'Create designs for marketing materials and websites.',
-        requirements: 'Graphic Design or relevant degree, 1+ years experience, Adobe skills.',
-        featured: true,
-        postedDate: new Date('2024-02-05'),
-        applications: 5
-    },
-    {
-        id: 11,
-        title: 'Junior Graphic Designer',
-        company: 'Design Agency',
-        location: 'Punjab',
-        type: 'full-time',
-        category: 'design',
-        salary: '40,000 - 55,000 PKR',
-        experience: '0-6 months',
-        description: 'Work on design projects and develop creative skills.',
-        requirements: 'Matric or Intermediate, 1+ years experience.',
-        featured: false,
-        postedDate: new Date('2024-02-07'),
-        applications: 8
-    },
-    {
         id: 12,
         title: 'Customer Service Representative (CSR)',
+        titleUrdu: 'کسٹمر سروس ریپریزنٹیٹو',
         company: 'Service Center',
         location: 'Punjab',
         type: 'full-time',
@@ -372,6 +304,7 @@ const fixedJobs = [
     {
         id: 13,
         title: 'Office Boy',
+        titleUrdu: 'آفس بوائے',
         company: 'Corporate Services',
         location: 'Punjab',
         type: 'full-time',
@@ -380,28 +313,14 @@ const fixedJobs = [
         experience: '0-1 years',
         description: 'Provide office support and maintenance.',
         requirements: 'Matric, physical fitness.',
-        featured: false,
+        featured: true,
         postedDate: new Date('2024-02-11'),
         applications: 36
     },
     {
-        id: 14,
-        title: 'Female Teacher (Eng, Math, Chemistry, Physics)',
-        company: 'Educational Institute',
-        location: 'Punjab',
-        type: 'full-time',
-        category: 'education',
-        salary: '40,000 - 45,000 PKR',
-        experience: '6 months - 1 year',
-        description: 'Teach subjects and develop lesson plans.',
-        requirements: 'Relevant degree, 2+ years teaching experience.',
-        featured: true,
-        postedDate: new Date('2024-02-13'),
-        applications: 1
-    },
-    {
         id: 15,
         title: 'Office Assistant',
+        titleUrdu: 'آفس اسسٹنٹ',
         company: 'Business Solutions',
         location: 'Punjab',
         type: 'full-time',
@@ -410,43 +329,14 @@ const fixedJobs = [
         experience: '0-6 months',
         description: 'Provide administrative support and data entry.',
         requirements: 'Matric, 1+ years office experience.',
-        featured: false,
+        featured: true,
         postedDate: new Date('2024-02-15'),
         applications: 9
     },
     {
-        id: 16,
-        title: 'Dispenser',
-        company: 'Medical Center',
-        location: 'Punjab',
-        type: 'full-time',
-        category: 'healthcare',
-        salary: '30,000 - 40,000 PKR',
-        experience: '0-6 months',
-        description: 'Handle medication dispensing and inventory.',
-        requirements: 'Dispenser Diploma or Relevant Degree, 1+ years pharmacy experience.',
-        featured: false,
-        postedDate: new Date('2024-02-17'),
-        applications: 18
-    },
-    {
-        id: 17,
-        title: 'Online Marketing Specialist',
-        company: 'Digital Marketing Agency',
-        location: 'Punjab',
-        type: 'full-time',
-        category: 'marketing',
-        salary: '45,000 - 60,000 PKR',
-        experience: '6 months - 1 year',
-        description: 'Develop online marketing campaigns and manage social media.',
-        requirements: 'Marketing degree, 2+ years digital marketing experience.',
-        featured: true,
-        postedDate: new Date('2024-02-19'),
-        applications: 2
-    },
-    {
         id: 18,
         title: 'Cashier',
+        titleUrdu: 'کیشئر',
         company: 'Retail Store',
         location: 'Punjab',
         type: 'full-time',
@@ -455,13 +345,14 @@ const fixedJobs = [
         experience: '0-6 months',
         description: 'Handle cash transactions and customer service.',
         requirements: 'Matric or Intermediate, 1+ years cashier experience.',
-        featured: false,
+        featured: true,
         postedDate: new Date('2024-02-21'),
         applications: 12
     },
     {
         id: 19,
         title: 'Data Entry Operator',
+        titleUrdu: 'ڈیٹا انٹری آپریٹر',
         company: 'Data Services',
         location: 'Punjab',
         type: 'full-time',
@@ -475,23 +366,9 @@ const fixedJobs = [
         applications: 20
     },
     {
-        id: 20,
-        title: 'Fashion Designer',
-        company: 'Fashion House',
-        location: 'Lahore',
-        type: 'full-time',
-        category: 'design',
-        salary: '55,000 - 70,000 PKR',
-        experience: '0-1 years',
-        description: 'Create fashion designs and develop clothing collections.',
-        requirements: 'Fashion Design degree, 2+ years experience.',
-        featured: true,
-        postedDate: new Date('2024-02-25'),
-        applications: 3
-    },
-    {
         id: 21,
         title: 'Makeup Artist',
+        titleUrdu: 'میک اپ آرٹسٹ',
         company: 'Beauty Studio',
         location: 'Jhang',
         type: 'full-time',
@@ -500,13 +377,14 @@ const fixedJobs = [
         experience: '6 months - 1 year',
         description: 'Provide professional makeup services for events.',
         requirements: 'Makeup certification, 3+ years experience.',
-        featured: true,
+        featured: false,
         postedDate: new Date('2024-02-27'),
         applications: 7
     },
     {
         id: 22,
         title: 'Content Writer',
+        titleUrdu: 'کنٹینٹ رائٹر',
         company: 'Media House',
         location: 'Multan',
         type: 'full-time',
@@ -515,44 +393,14 @@ const fixedJobs = [
         experience: '6 months - 1 year',
         description: 'Create content for blogs, websites, and social media.',
         requirements: 'English/Journalism degree, 2+ years writing experience.',
-        featured: true,
+        featured: false,
         postedDate: new Date('2024-03-01'),
         applications: 11
     },
     {
-        id: 23,
-        title: 'Software Developer',
-        company: 'Tech Solutions',
-        location: 'Faisalabad',
-        type: 'full-time',
-        category: 'technology',
-        salary: '55,000 - 70,000 PKR',
-        experience: '0-1 years',
-        description: 'Develop software applications and solutions.',
-        requirements: 'Computer Science degree, 2+ years development experience.',
-        featured: true,
-        postedDate: new Date('2024-03-03'),
-        applications: 11
-    },
-    {
-        id: 24,
-        title: 'Website Developer',
-        company: 'Web Solutions',
-        location: 'Islamabad',
-        type: 'full-time',
-        category: 'technology',
-        salary: '50,000 - 65,000 PKR',
-        experience: '6 months - 1 year',
-        description: 'Design and develop responsive websites.',
-        requirements: 'Computer Science degree, 2+ years web development experience.',
-        featured: false,
-        postedDate: new Date('2024-03-05'),
-        applications: 5
-    }
-    ,
-    {
         id: 25,
         title: 'Office Manager',
+        titleUrdu: 'آفس مینیجر',
         company: 'MyCareer Network',
         location: 'Punjab',
         type: 'full-time',
@@ -561,13 +409,14 @@ const fixedJobs = [
         experience: '0-1 years',
         description: 'Oversee office operations, coordinate teams, and ensure efficient workflows.',
         requirements: 'Bachelor degree preferred, strong coordination and communication skills.',
-        featured: false,
+        featured: true,
         postedDate: new Date(),
         applications: 5
     },
     {
         id: 26,
         title: 'Assistant Private Secretary',
+        titleUrdu: 'اسسٹنٹ پرائیویٹ سیکرٹری',
         company: 'MyCareer Network',
         location: 'Punjab',
         type: 'full-time',
@@ -581,23 +430,9 @@ const fixedJobs = [
         applications: 6
     },
     {
-        id: 27,
-        title: 'Computer Programmer',
-        company: 'MyCareer Network',
-        location: 'Punjab',
-        type: 'full-time',
-        category: 'technology',
-        salary: '55,000 - 70,000 PKR',
-        experience: '0-1 years',
-        description: 'Develop and maintain software applications as part of a team.',
-        requirements: 'Intermediate, Knowledge of modern programming languages and version control (Git).',
-        featured: false,
-        postedDate: new Date(),
-        applications: 3
-    },
-    {
         id: 28,
         title: 'Driver',
+        titleUrdu: 'ڈرائیور',
         company: 'MyCareer Network',
         location: 'Punjab',
         type: 'full-time',
@@ -613,6 +448,7 @@ const fixedJobs = [
     {
         id: 29,
         title: 'Manager Warehouse',
+        titleUrdu: 'مینیجر ویئر ہاؤس',
         company: 'MyCareer Network',
         location: 'Punjab',
         type: 'full-time',
@@ -621,13 +457,14 @@ const fixedJobs = [
         experience: '0-1 years',
         description: 'Manage warehouse operations, inventory, and staff coordination.',
         requirements: 'Intermediate, knowledge of inventory systems; leadership and planning skills.',
-        featured: false,
+        featured: true,
         postedDate: new Date(),
         applications: 14
     },
     {
         id: 30,
         title: 'Data Manager',
+        titleUrdu: 'ڈیٹا مینیجر',
         company: 'MyCareer Network',
         location: 'Punjab',
         type: 'full-time',
@@ -641,23 +478,9 @@ const fixedJobs = [
         applications: 15
     },
     {
-        id: 31,
-        title: 'Admin and Finance Officer',
-        company: 'MyCareer Network',
-        location: 'Punjab',
-        type: 'full-time',
-        category: 'finance',
-        salary: '45,000 - 60,000 PKR',
-        experience: '0-1 years',
-        description: 'Handle administrative tasks and financial record keeping.',
-        requirements: 'Bachelor degree, Basic accounting knowledge; MS Excel proficiency.',
-        featured: false,
-        postedDate: new Date(),
-        applications: 5
-    },
-    {
         id: 32,
         title: 'Social Media Manager',
+        titleUrdu: 'سوشل میڈیا مینیجر',
         company: 'MyCareer Network',
         location: 'Punjab',
         type: 'full-time',
@@ -673,6 +496,7 @@ const fixedJobs = [
     {
         id: 33,
         title: 'Assistant',
+        titleUrdu: 'اسسٹنٹ',
         company: 'MyCareer Network',
         location: 'Punjab',
         type: 'full-time',
@@ -688,6 +512,7 @@ const fixedJobs = [
     {
         id: 34,
         title: 'Security Guard',
+        titleUrdu: 'سیکیورٹی گارڈ',
         company: 'MyCareer Network',
         location: 'Punjab',
         type: 'full-time',
@@ -696,13 +521,14 @@ const fixedJobs = [
         experience: '0-1 years',
         description: 'Ensure safety and security of premises and personnel.',
         requirements: 'Physically fit, vigilance and discipline.',
-        featured: false,
+        featured: true,
         postedDate: new Date(),
         applications: 60
     },
     {
         id: 35,
         title: 'Junior Assistant',
+        titleUrdu: 'جونیئر اسسٹنٹ',
         company: 'MyCareer Network',
         location: 'Punjab',
         type: 'full-time',
@@ -716,23 +542,9 @@ const fixedJobs = [
         applications: 11
     },
     {
-        id: 36,
-        title: 'Administrative Officer',
-        company: 'MyCareer Network',
-        location: 'Punjab',
-        type: 'full-time',
-        category: 'administration',
-        salary: '45,000 - 60,000 PKR',
-        experience: '0-1 years',
-        description: 'Manage administrative functions and office procedures.',
-        requirements: 'Bachelor degree, Strong organizational and documentation skills.',
-        featured: false,
-        postedDate: new Date(),
-        applications: 2
-    },
-    {
         id: 37,
         title: 'Admin Officer',
+        titleUrdu: 'ایڈمن آفیسر',
         company: 'MyCareer Network',
         location: 'Punjab',
         type: 'full-time',
@@ -748,6 +560,7 @@ const fixedJobs = [
     {
         id: 38,
         title: 'Office Assistant + Record Keeper',
+        titleUrdu: 'آفس اسسٹنٹ + ریکارڈ کیپر',
         company: 'MyCareer Network',
         location: 'Punjab',
         type: 'full-time',
@@ -763,6 +576,7 @@ const fixedJobs = [
     {
         id: 39,
         title: 'Operation Controller',
+        titleUrdu: 'آپریشن کنٹرولر',
         company: 'MyCareer Network',
         location: 'Punjab',
         type: 'full-time',
@@ -778,6 +592,7 @@ const fixedJobs = [
     {
         id: 40,
         title: 'Production Manager',
+        titleUrdu: 'پروڈکشن مینیجر',
         company: 'MyCareer Network',
         location: 'Punjab',
         type: 'full-time',
@@ -793,6 +608,7 @@ const fixedJobs = [
     {
         id: 41,
         title: 'Sales Man',
+        titleUrdu: 'سیلز مین',
         company: 'MyCareer Network',
         location: 'Punjab',
         type: 'full-time',
@@ -976,6 +792,13 @@ function closeMobileMenu() {
 }
 
 // Enhanced Search Function
+// Popular-search chips: drop the term into the hero search box and run the search
+function quickSearch(term) {
+    const input = document.getElementById('heroSearchInput');
+    if (input) input.value = term;
+    searchJobs();
+}
+
 function searchJobs() {
     const searchTerm = document.getElementById('heroSearchInput').value.toLowerCase();
     const locationFilter = document.getElementById('heroLocationFilter').value;
@@ -987,6 +810,7 @@ function searchJobs() {
     if (searchTerm.trim()) {
         filteredJobs = filteredJobs.filter(job => 
         job.title.toLowerCase().includes(searchTerm) ||
+        (job.titleUrdu || '').includes(searchTerm) ||
         job.company.toLowerCase().includes(searchTerm) ||
         job.category.toLowerCase().includes(searchTerm) ||
         job.location.toLowerCase().includes(searchTerm) ||
@@ -1196,13 +1020,17 @@ async function loadFeaturedJobs() {
         jobs = jobs.map(job => ({ ...job, location: 'Punjab' }));
         console.log('Jobs loaded from fixed data:', jobs.length);
         
-        const featuredJobs = jobs.filter(job => job.featured).slice(0, 6);
+        // Show every job on the home page, with the featured ones listed first
+        const homeJobs = [
+            ...jobs.filter(job => job.featured),
+            ...jobs.filter(job => !job.featured)
+        ];
         const container = document.getElementById('featuredJobs');
-        
-        if (featuredJobs.length === 0) {
-            container.innerHTML = '<p class="text-gray-500 text-center col-span-full">No featured jobs available at the moment.</p>';
+
+        if (homeJobs.length === 0) {
+            container.innerHTML = '<p class="text-gray-500 text-center col-span-full">No jobs available at the moment.</p>';
         } else {
-            container.innerHTML = featuredJobs.map(job => createJobCard(job)).join('');
+            container.innerHTML = homeJobs.map(job => createJobCard(job)).join('');
         }
     } catch (error) {
         console.error('Error loading featured jobs:', error);
@@ -1263,7 +1091,8 @@ function createJobCard(job, showFullDetails = false) {
         <div class="job-card bg-white rounded-xl p-6 shadow-md hover-scale cursor-pointer" onclick="showJobDetails(${job.id})">
             <div class="flex justify-between items-start mb-4">
                 <div class="flex-1">
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">${normalizedJob.title}</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">${normalizedJob.title}</h3>
+                    ${normalizedJob.titleUrdu ? `<p class="text-lg text-gray-700 mb-2 text-left" dir="rtl">${normalizedJob.titleUrdu}</p>` : ''}
                     <p class="text-lg text-primary font-semibold mb-1">${normalizedJob.company}</p>
                     <div class="flex items-center text-gray-600 text-sm space-x-4">
                         <span class="flex items-center">
@@ -1345,6 +1174,7 @@ function showJobDetails(jobId) {
                 <div class="flex-1">
                     <div class="mb-4">
                         <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-1">${job.title}</h1>
+                        ${job.titleUrdu ? `<p class="text-xl sm:text-2xl text-gray-700 mb-2 text-left" dir="rtl">${job.titleUrdu}</p>` : ''}
                         <p class="text-lg sm:text-xl text-ntsBlue font-semibold">${job.company}</p>
                     </div>
                     
@@ -1647,69 +1477,45 @@ async function submitApplication(event) {
     
     console.log('Current job:', currentJob);
     
-    // Validate required fields
-    const requiredFields = [
-        'applicantName', 'fatherName', 'dateOfBirth', 'cnicNumber', 
-        'contactNumber', 'gender', 'applicantEmail', 'address', 
-        'education', 'applicantExperience', 'paymentScreenshot'
-    ];
-    const missingFields = [];
-    
-    console.log('Starting field validation...');
-    
-    requiredFields.forEach(fieldId => {
-        const field = document.getElementById(fieldId);
-        console.log(`Checking field ${fieldId}:`, field ? field.value : 'field not found');
-        if (!field || !field.value.trim()) {
-            const fieldName = fieldId.replace('applicant', '').replace(/([A-Z])/g, ' $1').toLowerCase().trim();
-            missingFields.push(fieldName);
+    // The payment screenshot is the one mandatory field; everything else is optional.
+    console.log('Validating...');
+
+    const paymentField = document.getElementById('paymentScreenshot');
+    if (!paymentField || !paymentField.files.length) {
+        showMessage('Please upload your payment screenshot (PKR 500) — it is required.', 'error');
+        return;
+    }
+
+    // Remaining formats are only checked when a value is actually present.
+
+    const email = document.getElementById('applicantEmail').value.trim();
+    if (email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            showMessage('Please enter a valid email address', 'error');
+            return;
         }
-    });
-    
-    console.log('Missing fields:', missingFields);
-    
-    if (missingFields.length > 0) {
-        console.log('Validation failed, showing error message');
-        showMessage(`Please fill in all required fields: ${missingFields.join(', ')}`, 'error');
-        return;
     }
-    
-    console.log('Field validation passed, continuing...');
-    
-    // Validate email format
-    console.log('Validating email...');
-    const email = document.getElementById('applicantEmail').value;
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        console.log('Email validation failed');
-        showMessage('Please enter a valid email address', 'error');
-        return;
+
+    const phone = document.getElementById('contactNumber').value.trim();
+    if (phone) {
+        const phoneRegex = /^[\+]?[0-9\s\-\(\)]{10,}$/;
+        if (!phoneRegex.test(phone)) {
+            showMessage('Please enter a valid phone number', 'error');
+            return;
+        }
     }
-    console.log('Email validation passed');
-    
-    // Validate phone number
-    console.log('Validating phone...');
-    const phone = document.getElementById('contactNumber').value;
-    const phoneRegex = /^[\+]?[0-9\s\-\(\)]{10,}$/;
-    if (!phoneRegex.test(phone)) {
-        console.log('Phone validation failed');
-        showMessage('Please enter a valid phone number', 'error');
-        return;
+
+    const cnicRaw = (document.getElementById('cnicNumber').value || '').trim();
+    if (cnicRaw) {
+        const cnic = cnicRaw.replace(/\D/g, '');
+        if (!/^[0-9]{13}$/.test(cnic)) {
+            showMessage('Please enter a valid CNIC number (13 digits)', 'error');
+            return;
+        }
     }
-    console.log('Phone validation passed');
-    
-    // Validate CNIC format (13 digits, no dashes)
-    console.log('Validating CNIC...');
-    let cnic = document.getElementById('cnicNumber').value || '';
-    // sanitize - remove any non-digit characters
-    cnic = cnic.replace(/\D/g, '');
-    const cnicRegex = /^[0-9]{13}$/;
-    if (!cnicRegex.test(cnic)) {
-        console.log('CNIC validation failed');
-        showMessage('Please enter a valid CNIC number (13 digits, no dashes)', 'error');
-        return;
-    }
-    console.log('CNIC validation passed');
+
+    console.log('Validation passed');
     
     // Prepare application data for email
     console.log('Preparing application data...');
@@ -1730,6 +1536,8 @@ async function submitApplication(event) {
         education: document.getElementById('education').value,
         applicantExperience: document.getElementById('applicantExperience').value,
         skills: document.getElementById('skills').value,
+        shiftAvailable: document.querySelector('input[name="shiftAvailable"]:checked')?.value || 'Not specified',
+        expectedSalary: document.getElementById('expectedSalary').value || 'Not specified',
         coverLetter: document.getElementById('coverLetter').value,
         cvFile: document.getElementById('cvFile').files[0]?.name || 'No CV uploaded',
         paymentScreenshot: document.getElementById('paymentScreenshot').files[0]?.name || 'No payment proof'
@@ -1784,9 +1592,16 @@ function updateStats() {
 }
 
 // Initialize App
+// Always open the page at the top — otherwise the browser restores the previous
+// scroll position on refresh and the site loads part-way down.
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     showHome();
-    
+    window.scrollTo(0, 0);
+
     // Form submit is handled by onsubmit attribute in HTML
     
     // Initialize EmailJS when page loads

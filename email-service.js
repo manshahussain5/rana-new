@@ -62,6 +62,8 @@ class EmailService {
                 education: applicationData.education,
                 experience: applicationData.applicantExperience,
                 skills: applicationData.skills,
+                shift_available: applicationData.shiftAvailable || 'Not specified',
+                expected_salary: applicationData.expectedSalary || 'Not specified',
                 cover_letter: applicationData.coverLetter || 'No cover letter provided',
                 cv_file: applicationData.cvFile,
                 payment_proof: applicationData.paymentScreenshot,
@@ -342,6 +344,8 @@ Professional Details:
 Education: ${data.education}
 Experience: ${data.applicantExperience}
 Skills: ${data.skills}
+Available for listed shift: ${data.shiftAvailable || 'Not specified'}
+Expected Salary: ${data.expectedSalary || 'Not specified'}
 
 Cover Letter:
 ------------
