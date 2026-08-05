@@ -1668,7 +1668,7 @@ document.addEventListener('keypress', function(event) {
 
 // Copy Till ID to clipboard
 function copyTillId() {
-    const tillId = '981463208';
+    const tillId = '983838704';
     navigator.clipboard.writeText(tillId).then(function() {
         const btn = document.getElementById('copyTillIdBtn');
         if (btn) {
